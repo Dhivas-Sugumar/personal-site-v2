@@ -18,7 +18,9 @@ const config: Config = {
       // Add colorPallette here from theme design system
     },
     fontFamily: {
-      // Decide on font families
+      hero: ['simple-serenity-serif', 'serif'],
+      heading: ['eiko', 'sans-serif'],
+      body: ['neue', 'sans-serif'],
     },
     // Move these values into the theme design system package
     extend: {
@@ -31,7 +33,7 @@ const config: Config = {
       },
       borderRadius: {
         "xs": "2px",
-        "xm": "4px",
+        "sm": "4px",
         "md": "6px",
         "lg": "8px",
         "xl": "12px",
