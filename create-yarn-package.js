@@ -40,7 +40,7 @@ function createYarnWorkspace(workspaceName) {
     };
 
     fs.mkdirSync(path.join(newWorkspacePath, 'src'));
-    fs.writeFileSync(path.join(newWorkspacePath, 'src/index.ts'), 'export const hello = "Hello, World!";');
+    fs.writeFileSync(path.join(newWorkspacePath, 'src/index.ts'), '');
     fs.writeFileSync(path.join(newWorkspacePath, 'package.json'), JSON.stringify(newPackageJson, null, 2));
 
     packageJson.workspaces.push(`packages/${workspaceName}`);

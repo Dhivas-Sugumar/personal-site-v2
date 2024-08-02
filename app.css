@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "eiko";
+    src: url("./packages/design-system/assets/fonts/eiko.otf") format("otf");
+  }
+  @font-face {
+    font-family: "neue";
+    src: url("./packages/design-system/assets/fonts/neue.otf") format("otf");
+  }
+  @font-face {
+    font-family: "simple-serenity-serif";
+    src: url("./packages/design-system/assets/fonts/simple-serenity-serif.ttf")
+      format("ttf");
+  }
+}
