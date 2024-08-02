@@ -1,12 +1,15 @@
-import { PolaroidCard } from "@/design-system/src/cards/PolaroidCard";
+import { ExperienceCard } from "@/design-system/src/cards/ExperienceCard";
 
 export default function Home() {
   return (
-    <PolaroidCard
+    <ExperienceCard
       imageSrc={"../public/next.svg"}
-      date={"07/01/23"}
-      name={"Olympic"}
-      variant={"small"}
+      dateStart={"07/01/23"}
+      dateEnd="07/01/23"
+      companyName={"Next.js"}
+      jobTitle={"Software Engineer"}
+      location={"Remote"}
+      description={"I worked on the Next.js team."}
       imageAlt={"Olympic National Park Polaroid"}
     />
   );

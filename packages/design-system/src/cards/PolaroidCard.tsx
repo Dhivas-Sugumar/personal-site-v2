@@ -7,7 +7,7 @@ export type PolaroidCardProps = {
   imageSrc: string;
   imageAlt: string;
   date: string;
-  name: string;
+  name?: string;
   variant: PolaroidCardVariant;
 };
 
