@@ -33,6 +33,13 @@ const paragraphPlugin: PluginCreator = ({ addComponents }) =>
   
   const headerPlugin: PluginCreator = ({ addComponents }) =>
     addComponents({
+      '.hero': {
+        fontFamily: 'Simple Serenity Serif',
+        fontSize: '168px',
+        fontWeight: '500',
+        lineHeight: '72px',
+        color: ColorPalette.neutral10,
+      },
       '.header': {
         fontFamily: 'Eiko',
         fontSize: '32px',
