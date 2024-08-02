@@ -1,7 +1,16 @@
 import Image from "next/image";
 import { useIconImageVariant } from "./hooks/useIconImageVariant";
 
-export type IconVariant = "ruby" | "react" | "graphql" | "typescript";
+export type IconVariant =
+  | "ruby"
+  | "react"
+  | "graphql"
+  | "typescript"
+  | "dhivasLogo"
+  | "resume"
+  | "build"
+  | "mail"
+  | "photo";
 export type IconSize = "small" | "medium" | "large";
 export type IconProps = {
   iconAlt: string;
