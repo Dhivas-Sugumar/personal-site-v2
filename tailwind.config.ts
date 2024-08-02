@@ -1,4 +1,4 @@
-import { ColorPalette } from "@/design-system";
+import { ColorPalette } from "./packages/design-system/src/theme/ColorPalette";
 import type { Config } from "tailwindcss";
 import { PluginCreator } from "tailwindcss/types/config";
 
