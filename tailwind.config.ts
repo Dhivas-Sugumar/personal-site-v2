@@ -78,7 +78,7 @@ const config: Config = {
       xl: '1440px',
     },
     colors: {
-      // Add colorPallette here from theme design system
+      ...ColorPalette,
     },
     fontFamily: {
       hero: ['simple-serenity-serif', 'serif'],
