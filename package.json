@@ -4,7 +4,8 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "packages/design-system"
+    "packages/design-system",
+    "packages/about-me"
   ],
   "scripts": {
     "dev": "next dev",
