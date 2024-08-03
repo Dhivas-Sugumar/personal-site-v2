@@ -1,1 +1,0 @@
-export const headerName = "Dhivas Sugumar";
