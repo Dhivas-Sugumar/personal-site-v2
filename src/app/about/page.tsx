@@ -1,3 +1,10 @@
+import { Header } from "@/design-system";
+import { headerPageName } from "./Constants";
+
 export default function Page() {
-  return <h1>About</h1>;
+  return (
+    <div>
+      <Header currentPage={headerPageName} />
+    </div>
+  );
 }
