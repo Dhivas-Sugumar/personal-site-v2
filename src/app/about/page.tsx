@@ -1,3 +1,10 @@
+import { Header } from "@/design-system";
+
 export default function Page() {
-  return <h1>About</h1>;
+  return (
+    <>
+      <Header currentPage={"About"} />
+      <h1>About Me</h1>
+    </>
+  );
 }
