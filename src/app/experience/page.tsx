@@ -1,10 +1,11 @@
+import { Header } from "@/design-system";
 import { ExperienceSection } from "@/experience";
 
 export default function Page() {
   return (
-    <div>
-      <h1>Experience</h1>
+    <>
+      <Header currentPage={"Experience"} />
       <ExperienceSection />
-    </div>
+    </>
   );
 }
