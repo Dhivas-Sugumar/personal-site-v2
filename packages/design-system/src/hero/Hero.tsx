@@ -1,5 +1,5 @@
 import { heroText } from "./Constants";
 
 export const Hero = () => {
-  return <h1 className="hero">{heroText}</h1>;
+  return <h1 className="hero text-accent300">{heroText}</h1>;
 };

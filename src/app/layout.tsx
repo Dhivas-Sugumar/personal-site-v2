@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { NavigationBar } from "@/design-system/src/navigation-bar/NavigationBar";
 import { NavigationBarContainer } from "@/design-system/src/navigation-bar/NavigationBarContainer";
 
 export const metadata: Metadata = {
