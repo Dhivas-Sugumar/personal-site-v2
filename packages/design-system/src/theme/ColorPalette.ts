@@ -1,4 +1,4 @@
-export const ColorPalette = {
+export const colorPalette = {
     // Neutrals 
     neutral0: '#000000',
     neutral10: '#22252A',
@@ -32,3 +32,5 @@ export const ColorPalette = {
     accent200: '#FDD44E',
     accent300: '#EEEADD'
 }
+
+export type ColorPalette = typeof colorPalette;
