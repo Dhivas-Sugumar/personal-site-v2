@@ -2,11 +2,15 @@ import Image from "next/image";
 import React from "react";
 
 type PolaroidCardVariant = "default" | "small";
-
-export type PolaroidCardProps = {
+export type PolaroidCardImage = {
   imageSrc: string;
   imageAlt: string;
-  date: string;
+};
+
+export type PolaroidCardProps = {
+  imageSrc: PolaroidCardImage["imageSrc"];
+  imageAlt: PolaroidCardImage["imageAlt"];
+  date?: string;
   name?: string;
   variant: PolaroidCardVariant;
 };
