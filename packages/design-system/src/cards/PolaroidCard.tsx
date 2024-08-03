@@ -10,7 +10,7 @@ export type PolaroidCardImage = {
 export type PolaroidCardProps = {
   imageSrc: PolaroidCardImage["imageSrc"];
   imageAlt: PolaroidCardImage["imageAlt"];
-  date: string;
+  date?: string;
   name?: string;
   variant: PolaroidCardVariant;
 };
