@@ -3,7 +3,7 @@ import { headerText } from "./Constants";
 import { Row } from "@/design-system";
 import { Icon } from "../Icon";
 
-export type HeaderProps = PropsWithChildren & {
+export type HeaderProps = {
   currentPage: string;
 };
 
