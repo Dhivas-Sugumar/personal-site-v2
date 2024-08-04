@@ -1,12 +1,12 @@
-import { CardList } from "@/design-system/src/cards/CardList";
-import { ExperienceCard } from "@/design-system/src/cards/ExperienceCard";
-import { experienceCards } from "../Constants";
+import { EducationCardList } from "./education/EducationCardList";
+import { ExperienceCardList } from "./experience/ExperienceCardList";
 
 export const ExperienceSection: React.FC = () => {
   return (
     <div>
       <h2>Experience</h2>
-      <CardList cards={experienceCards} CardComponent={ExperienceCard} />
+      <EducationCardList />
+      <ExperienceCardList />
     </div>
   );
 };
