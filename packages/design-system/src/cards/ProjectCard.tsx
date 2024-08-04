@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   ...props
 }) => {
   return (
-    <BaseCard {...props}>
+    <BaseCard polaroidVariant="default" {...props}>
       <div className="flex flex-wrap">
         {technologies.map((tech) => (
           <TechnologyCard key={tech.name} name={tech.name} icon={tech.icon} />
