@@ -5,7 +5,7 @@ type CardListProps<T> = {
 
 export function CardList<T>({ cards, CardComponent }: CardListProps<T>) {
   return (
-    <div className="flex flex-column">
+    <div className="flex flex-row">
       {cards.map((card, index) => (
         <CardComponent key={index} {...card} />
       ))}
