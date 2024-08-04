@@ -1,7 +1,10 @@
-import { IconSize, IconVariant } from "../Icon";
+import { IconSize } from "../Icon";
 
-export const useIconImageVariant = (variant: IconVariant, size: IconSize) => {
+// TODO: Add returning the image to this function
+export const useIconImageVariant = (size: IconSize) : {
+    width: number;
+    height: number;
+}  => {
     const iconSize = size === "small" ? 24 : 36 ;
-    const iconSrc = `./icons/${variant}.svg`;
-    return { imageSrc: iconSrc, width: iconSize, height: iconSize };
+    return { width: iconSize, height: iconSize };
 }
