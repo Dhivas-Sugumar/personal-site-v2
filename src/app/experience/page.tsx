@@ -1,10 +1,10 @@
-import { Icon } from "@/design-system/src/Icon";
+import { ExperienceSection } from "@/experience/src/components/ExperienceSection";
 
 export default function Page() {
   return (
     <>
       <h1>Experience</h1>
-      <Icon iconAlt={"Test"} size={"small"} variant={"datadog"} />
+      <ExperienceSection />
     </>
   );
 }
