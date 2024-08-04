@@ -4,8 +4,8 @@ import { PolaroidCard } from "./PolaroidCard";
 export type BaseCardProps = PropsWithChildren & {
   imageSrc: string;
   imageAlt: string;
-  startDate: string;
-  endDate: string;
+  startDate?: string;
+  endDate?: string;
   name: string;
   description: string;
   polaroidVariant?: "default" | "small";
