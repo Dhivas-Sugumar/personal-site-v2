@@ -22,3 +22,63 @@ export const Icon: React.FC<IconProps> = ({ iconAlt, size, variant }) => {
   const { imageSrc, width, height } = useIconImageVariant(variant, size);
   return <Image src={imageSrc} width={width} height={height} alt={iconAlt} />;
 };
+
+/*
+Icon 
+Languages 
+- Java
+- Python 
+- typescript
+- Ruby
+-html 
+- css 
+- javascript
+- sql 
+- mongodb 
+- graphql
+
+frameworks 
+- Rails 
+- React 
+- React Native *
+- FastAPI 
+- next.js 
+- nest.js * 
+- remix * 
+- express* 
+- pRSIMA 
+- Expo 
+- tailwind 
+- Bootstrap
+- pandas 
+- numpy * 
+- pillow * 
+- scikit learn 
+- OpenCV 
+
+testing frameworks 
+- Jest
+- Minitest *
+- Rspec *
+
+Developer tools 
+- Git 
+- Github 
+- Datadog 
+- Heorku 
+- Netlify
+- Vercel
+- Google Cloud PLatform 
+- Firebase 
+- Docker 
+- AWS 
+- Jupyer Notebook 
+- VS Code 
+- Jetbrains IDE suite 
+- Postman 
+- Figma 
+
+
+Dhivas Sugumar Logo 
+
+*/
