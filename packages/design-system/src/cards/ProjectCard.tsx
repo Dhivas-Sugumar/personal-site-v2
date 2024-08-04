@@ -8,12 +8,6 @@ export type TechnologiesProps = {
 };
 
 export type ProjectCardProps = BaseCardProps & {
-  imageSrc: string;
-  imageAlt: string;
-  startDate: string;
-  endDate: string;
-  projectName: string;
-  description: string;
   technologies: TechnologiesProps[];
 };
 
