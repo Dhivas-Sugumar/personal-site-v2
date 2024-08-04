@@ -55,7 +55,8 @@ export type IconVariant =
   | "vsCode"
   | "jetbrainsIDEsuite"
   | "postman"
-  | "figma";
+  | "figma"
+  | "linkedin";
 
 export type IconSize = "small" | "medium" | "large";
 

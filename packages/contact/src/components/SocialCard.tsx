@@ -3,7 +3,7 @@ import { Icon, IconVariant } from "@/design-system/src/Icon";
 import Link from "next/link";
 
 export type SocialCardProps = {
-  socialName: string;
+  name: string;
   iconVariant: IconVariant;
   iconAlt: string;
   link: string;
@@ -11,7 +11,7 @@ export type SocialCardProps = {
 };
 
 export const SocialCard: React.FC<SocialCardProps> = ({
-  socialName,
+  name,
   iconVariant,
   iconAlt,
   link,
@@ -22,7 +22,7 @@ export const SocialCard: React.FC<SocialCardProps> = ({
       <div className="flex bg-accent300 rounded-xl">
         <Icon variant={iconVariant} iconAlt={iconAlt} />
         <div className="flex flex-col px-l">
-          <h2>{socialName}</h2>
+          <h3>{name}</h3>
           <p>{username}</p>
         </div>
       </div>
