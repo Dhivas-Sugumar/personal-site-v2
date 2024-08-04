@@ -5,7 +5,7 @@ const github : SocialCardProps = {
     iconVariant: "github",
     iconAlt: "GitHub",
     username: "Dhivas-Sugumar",
-    link: "www.github.com",
+    link: "https://github.com/Dhivas-Sugumar",
 }
 
 const linkedin : SocialCardProps = {
@@ -13,7 +13,7 @@ const linkedin : SocialCardProps = {
     iconVariant: "linkedin",
     iconAlt: "LinkedIn",
     username: "Dhivas Sugumar",
-    link: "www.linkedin.com",
+    link: "https://www.linkedin.com/in/dhivas-sugumar/",
 }
 
 const email: SocialCardProps = {
