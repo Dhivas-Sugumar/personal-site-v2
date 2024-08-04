@@ -61,11 +61,15 @@ export type IconSize = "small" | "medium" | "large";
 
 export type IconProps = {
   iconAlt: string;
-  size: IconSize;
+  size?: IconSize;
   variant: IconVariant;
 };
 
-export const Icon: React.FC<IconProps> = ({ iconAlt, size, variant }) => {
+export const Icon: React.FC<IconProps> = ({
+  iconAlt,
+  size = "medium",
+  variant,
+}) => {
   const { width, height } = useIconImageVariant(size);
   const [iconSrc, setIconSrc] = useState<string>("");
 
