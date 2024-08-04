@@ -1,3 +1,10 @@
+import { ProjectsList } from "@/project/src/components/ProjectsList";
+
 export default function Page() {
-  return <h1>Projects</h1>;
+  return (
+    <div>
+      <h1>Projects</h1>
+      <ProjectsList />
+    </div>
+  );
 }
