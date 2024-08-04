@@ -5,7 +5,8 @@
   "workspaces": [
     "packages/*",
     "packages/design-system",
-    "packages/about-me"
+    "packages/about-me",
+    "packages/contact"
   ],
   "scripts": {
     "dev": "next dev",

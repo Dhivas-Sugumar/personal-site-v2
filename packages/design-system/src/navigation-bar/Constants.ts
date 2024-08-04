@@ -11,7 +11,7 @@ const dhivasTab : NavigationBarTabProps = {
     link: "/about",
 };
 
-export const experienceTab : NavigationBarTabProps = {
+const experienceTab : NavigationBarTabProps = {
     title: "Experience",
     icon: {
         variant: "resume",
@@ -21,7 +21,7 @@ export const experienceTab : NavigationBarTabProps = {
     link: "/experience",
 };
 
-export const projectsTab : NavigationBarTabProps = {
+const projectsTab : NavigationBarTabProps = {
     title: "Projects",
     icon: {
         variant: "build",
@@ -31,7 +31,7 @@ export const projectsTab : NavigationBarTabProps = {
     link: "/project",
 };
 
-export const contactTab : NavigationBarTabProps = {
+const contactTab : NavigationBarTabProps = {
     title: "Contact",
     icon: {
         variant: "mail",
@@ -41,7 +41,7 @@ export const contactTab : NavigationBarTabProps = {
     link: "/contact",
 };
 
-export const miscTab : NavigationBarTabProps = {
+const miscTab : NavigationBarTabProps = {
     title: "Misc",
     icon: {
         variant: "photo",
@@ -58,6 +58,6 @@ export const navigationBarTabs : NavigationBarProps = {
         experienceTab,
         projectsTab,
         contactTab,
-        miscTab,
+        // miscTab, // TODO: Release this tab with an update
     ],
 };
