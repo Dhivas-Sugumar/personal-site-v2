@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { NavigationBarContainer } from "@/design-system/src/navigation-bar/NavigationBarContainer";
+import { ToastProvider } from "@/design-system/src/provider/ToastProvider";
 
 export const metadata: Metadata = {
   title: "Dhivas Sugumar",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className="bg-neutral0">
         {children}
         <NavigationBarContainer />
+        <ToastProvider />
       </body>
     </html>
   );
