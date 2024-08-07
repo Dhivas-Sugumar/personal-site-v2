@@ -1,19 +1,17 @@
 import { ReactNode } from "react";
-import { TechnologyCard } from "./TechnologyCard";
-import { BaseCard, BaseCardProps } from "./BaseCard";
+import { TechnologyCard } from "../../../design-system/src/cards/TechnologyCard";
+import {
+  BaseCard,
+  BaseCardProps,
+} from "../../../design-system/src/cards/BaseCard";
+import { IconProps } from "@/design-system/src/Icon";
 
 export type TechnologiesProps = {
   name: string;
-  icon: ReactNode; // Add a Icon component to the design  system
+  icon: IconProps; // Add a Icon component to the design  system
 };
 
 export type ProjectCardProps = BaseCardProps & {
-  imageSrc: string;
-  imageAlt: string;
-  startDate: string;
-  endDate: string;
-  projectName: string;
-  description: string;
   technologies: TechnologiesProps[];
 };
 
