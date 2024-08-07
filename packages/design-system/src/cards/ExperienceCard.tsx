@@ -13,8 +13,8 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <BaseCard polaroidVariant="small" {...props}>
       <div className="flex justify-between">
-        <h3>{jobTitle}</h3>
-        <h3>{location}</h3>
+        <h3 className="header3">{jobTitle}</h3>
+        <h3 className="header3">{location}</h3>
       </div>
     </BaseCard>
   );

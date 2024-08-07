@@ -32,8 +32,8 @@ export const PolaroidCard: React.FC<PolaroidCardProps> = ({
         <Image src={imageSrc} width={450} height={400} alt={imageAlt} />
       )}
       <div className={`${polaroidTextBottom} border-neutral100 bg-neutral100 `}>
-        <h3 className="text-neutral0">{date}</h3>
-        <h3 className="text-neutral0">{name}</h3>
+        <h3 className="header3">{date}</h3>
+        <h3 className="header3">{name}</h3>
       </div>
     </div>
   );
