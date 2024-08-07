@@ -2,7 +2,7 @@ import { NavigationBarProps } from "./NavigationBar";
 import { NavigationBarTabProps } from "./NavigationBarTab";
 
 const dhivasTab : NavigationBarTabProps = {
-    title: "dhivas",
+    title: "Dhivas",
     icon: {
         variant: "dhivasLogo",
         size: "medium",
@@ -24,9 +24,9 @@ const experienceTab : NavigationBarTabProps = {
 const projectsTab : NavigationBarTabProps = {
     title: "Projects",
     icon: {
-        variant: "build",
+        variant: "project",
         size: "medium",
-        iconAlt: "build",
+        iconAlt: "project icon",
     },
     link: "/project",
 };

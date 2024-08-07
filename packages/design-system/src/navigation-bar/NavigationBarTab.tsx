@@ -15,7 +15,7 @@ export const NavigationBarTab: React.FC<NavigationBarTabProps> = ({
   const { variant, size, iconAlt } = icon;
   return (
     <Link href={link}>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center p-4">
         <Icon variant={variant} size={size} iconAlt={iconAlt} />
         <h4>{title}</h4>
       </div>
