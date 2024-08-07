@@ -30,8 +30,8 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         variant={children ? "small" : "default"}
       />
       <div className="flex flex-col px-l">
-        <h2>{name}</h2>
-        <p>{description}</p>
+        <h2 className="header2">{name}</h2>
+        <p className="body">{description}</p>
         {children}
       </div>
     </div>
