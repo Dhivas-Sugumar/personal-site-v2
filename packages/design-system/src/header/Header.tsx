@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { headerText } from "./Constants";
 import { Row } from "@/design-system";
 import { Icon } from "../Icon";

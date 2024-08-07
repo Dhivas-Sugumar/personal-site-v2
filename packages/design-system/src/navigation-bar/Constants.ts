@@ -2,7 +2,7 @@ import { NavigationBarProps } from "./NavigationBar";
 import { NavigationBarTabProps } from "./NavigationBarTab";
 
 const dhivasTab : NavigationBarTabProps = {
-    title: "dhivas",
+    title: "Dhivas",
     icon: {
         variant: "dhivasLogo",
         size: "medium",
