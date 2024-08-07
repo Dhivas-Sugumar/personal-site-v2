@@ -1,9 +1,10 @@
 import { ReactNode } from "react";
+import { Icon, IconProps } from "../Icon";
 
 type TechnologyCardProps = {
   key?: string;
   name: string;
-  icon: ReactNode;
+  icon: IconProps;
 };
 
 export const TechnologyCard: React.FC<TechnologyCardProps> = ({
@@ -13,7 +14,7 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
 }) => {
   return (
     <div key={key} className="flex flex-col">
-      {icon}
+      <Icon variant={icon.variant} size={icon.size} iconAlt={icon.iconAlt} />
       <h4>{name}</h4>
     </div>
   );
