@@ -24,9 +24,9 @@ const experienceTab : NavigationBarTabProps = {
 const projectsTab : NavigationBarTabProps = {
     title: "Projects",
     icon: {
-        variant: "build",
+        variant: "project",
         size: "medium",
-        iconAlt: "build",
+        iconAlt: "project icon",
     },
     link: "/project",
 };

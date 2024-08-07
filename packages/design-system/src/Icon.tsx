@@ -12,7 +12,7 @@ export type IconVariant =
   | "typescript"
   | "dhivasLogo"
   | "resume"
-  | "build"
+  | "project"
   | "mail"
   | "photo"
   | "java"
