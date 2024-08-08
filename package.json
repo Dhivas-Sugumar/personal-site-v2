@@ -6,7 +6,8 @@
     "packages/*",
     "packages/design-system",
     "packages/about-me",
-    "packages/contact"
+    "packages/contact",
+    "packages/email-sender"
   ],
   "scripts": {
     "dev": "next dev",
@@ -16,6 +17,7 @@
     "package:create": "ts-node create-yarn-package.js"
   },
   "dependencies": {
+    "mailtrap": "3.4.0",
     "next": "14.2.5",
     "react": "18",
     "react-dom": "18",
