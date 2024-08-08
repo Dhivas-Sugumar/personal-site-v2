@@ -1,6 +1,7 @@
+"use client";
+
 import { FormEvent, useState } from "react";
 import { toast } from "react-toastify";
-import { useSendEmail } from "../hooks/useSendEmail";
 import { useParseEmailFormData } from "../hooks/useParseEmailFormData";
 
 export const EmailForm: React.FC = () => {
@@ -9,7 +10,7 @@ export const EmailForm: React.FC = () => {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsLoading(true);
-
+    console.log("Sending email...");
     try {
       const formData = new FormData(event.currentTarget);
       const parsedFormData = useParseEmailFormData(formData);
@@ -17,15 +18,16 @@ export const EmailForm: React.FC = () => {
         toast.error("Failed to send email. Please try again later.");
         return;
       }
-      const { senderName, senderEmail, subject, content } = parsedFormData;
-      const response = await useSendEmail(
-        senderName,
-        senderEmail,
-        subject,
-        content
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(parsedFormData),
+      });
+      const data = await response.json();
 
-      if (response.success === true) {
+      if (data.success === true) {
         toast.success(
           "Email Sent! Look out for a reply in the not so distant future :)"
         );
@@ -40,12 +42,40 @@ export const EmailForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col space-y-4">
-      <input className="input" type="email" placeholder="Your Email" required />
-      <input className="input" type="text" placeholder="Subject" required />
-      <textarea className="input" placeholder="Message" required />
-      <button className={`button-primary ${isLoading && "cursor-not-allowed"}`}>
-        Send
+    <form onSubmit={onSubmit} className="space-y-4">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="w-full p-2 border rounded"
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        className="w-full p-2 border rounded"
+      />
+      <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+        className="w-full p-2 border rounded"
+      />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+        className="w-full p-2 border rounded h-32"
+      ></textarea>
+      <button
+        type="submit"
+        disabled={isLoading}
+        className="w-full p-2 bg-neutral100"
+      >
+        {isLoading ? "Sending..." : "Send Message"}
       </button>
     </form>
   );
