@@ -6,7 +6,8 @@
     "packages/*",
     "packages/design-system",
     "packages/about-me",
-    "packages/contact"
+    "packages/contact",
+    "packages/email-sender"
   ],
   "scripts": {
     "dev": "next dev",
@@ -16,13 +17,16 @@
     "package:create": "ts-node create-yarn-package.js"
   },
   "dependencies": {
+    "mailtrap": "3.4.0",
     "next": "14.2.5",
+    "nodemailer": "6.9.14",
     "react": "18",
     "react-dom": "18",
     "react-toastify": "10.0.5"
   },
   "devDependencies": {
     "@types/node": "20",
+    "@types/nodemailer": "6.4.15",
     "@types/react": "18",
     "@types/react-dom": "18",
     "eslint": "8",

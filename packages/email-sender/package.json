@@ -1,0 +1,16 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "nodemailer": "6.9.14",
+    "mailtrap": "3.4.0"
+  },
+  "devDependencies": {
+    "typescript": "4.0.0",
+    "@types/nodemailer": "6.4.15"
+  }
+}
