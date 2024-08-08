@@ -13,6 +13,7 @@ export const useParseEmailFormData = (
   const subject = String(emailFormData.get("subject"));
   const content = String(emailFormData.get("content"));
 
+  // String(null) -> "null"
   if (
     senderName === "null" ||
     senderEmail === "null" ||
