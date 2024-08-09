@@ -9,7 +9,7 @@ export type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   return (
-    <Row contentJustify="between">
+    <Row contentJustify="between" className="bg-accent300 p-md">
       <h3>{headerText}</h3>
       <Icon iconAlt={"Dhivas Sugumar"} size={"small"} variant={"dhivasLogo"} />
       <h3>{currentPage}</h3>
