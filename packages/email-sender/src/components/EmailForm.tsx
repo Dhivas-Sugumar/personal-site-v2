@@ -2,8 +2,8 @@
 
 import { FormEvent, useState } from "react";
 import { toast } from "react-toastify";
-import { useSendEmail } from "../hooks/useSendEmail";
-import { useParseEmailFormData } from "../hooks/useParseEmailFormData";
+import { useSendEmail } from "../action/useSendEmail";
+import { useParseEmailFormData } from "../util/parseEmailFormData";
 
 export const EmailForm: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -19,17 +19,13 @@ export const EmailForm: React.FC = () => {
         toast.error("Failed to send email. Please try again later.");
         return;
       }
-      const { senderName, senderEmail, subject, content } = parsedFormData;
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          senderName,
-          senderEmail,
-          subject,
-          content,
+          parsedFormData,
         }),
       });
 
@@ -48,7 +44,7 @@ export const EmailForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col space-y-4">
+    <form action={onSubmit} className="flex flex-col space-y-4">
       <input className="input" type="email" placeholder="Your Email" required />
       <input className="input" type="text" placeholder="Subject" required />
       <textarea className="input" placeholder="Message" required />
