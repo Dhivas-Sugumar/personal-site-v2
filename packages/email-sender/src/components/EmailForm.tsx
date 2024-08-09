@@ -1,3 +1,5 @@
+"use client";
+
 import { FormEvent, useState } from "react";
 import { toast } from "react-toastify";
 import { useSendEmail } from "../hooks/useSendEmail";
@@ -18,12 +20,18 @@ export const EmailForm: React.FC = () => {
         return;
       }
       const { senderName, senderEmail, subject, content } = parsedFormData;
-      const response = await useSendEmail(
-        senderName,
-        senderEmail,
-        subject,
-        content
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          senderName,
+          senderEmail,
+          subject,
+          content,
+        }),
+      });
 
       if (response.success === true) {
         toast.success(
