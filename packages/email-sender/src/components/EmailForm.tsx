@@ -44,7 +44,7 @@ export const EmailForm: React.FC = () => {
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col space-y-4">
+    <form onSubmit={onSubmit} className="flex flex-col space-y-4">
       <input className="input" type="email" placeholder="Your Email" required />
       <input className="input" type="text" placeholder="Subject" required />
       <textarea className="input" placeholder="Message" required />

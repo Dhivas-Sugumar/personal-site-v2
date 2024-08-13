@@ -6,11 +6,12 @@
     "build": "tsc"
   },
   "dependencies": {
+    "mailtrap": "3.4.0",
     "nodemailer": "6.9.14",
-    "mailtrap": "3.4.0"
+    "zod": "3.23.8"
   },
   "devDependencies": {
-    "typescript": "4.0.0",
-    "@types/nodemailer": "6.4.15"
+    "@types/nodemailer": "6.4.15",
+    "typescript": "4.0.0"
   }
 }
