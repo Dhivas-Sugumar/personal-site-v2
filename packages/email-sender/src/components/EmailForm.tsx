@@ -2,7 +2,6 @@
 
 import { FormEvent, useState } from "react";
 import { toast } from "react-toastify";
-import { useSendEmail } from "../action/useSendEmail";
 import { useParseEmailFormData } from "../util/parseEmailFormData";
 
 export const EmailForm: React.FC = () => {
