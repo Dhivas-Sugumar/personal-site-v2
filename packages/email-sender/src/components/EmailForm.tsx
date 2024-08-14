@@ -1,51 +1,69 @@
-import { FormEvent, useState } from "react";
+"use client";
+
+import { sendEmail } from "@/email-sender/lib/actions/send-email";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import { useSendEmail } from "../hooks/useSendEmail";
-import { useParseEmailFormData } from "../hooks/useParseEmailFormData";
+import { zodResolver } from "@hookform/resolvers/zod";
+import {
+  EmailFormData,
+  emailFormSchema,
+} from "@/email-sender/lib/models/email-form";
 
 export const EmailForm: React.FC = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setIsLoading(true);
-
-    try {
-      const formData = new FormData(event.currentTarget);
-      const parsedFormData = useParseEmailFormData(formData);
-      if (parsedFormData === undefined) {
-        toast.error("Failed to send email. Please try again later.");
-        return;
-      }
-      const { senderName, senderEmail, subject, content } = parsedFormData;
-      const response = await useSendEmail(
-        senderName,
-        senderEmail,
-        subject,
-        content
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting }, // Add user facing errors later using errors
+  } = useForm<EmailFormData>({
+    resolver: zodResolver(emailFormSchema),
+  });
+  const onSubmit = async (data: EmailFormData) => {
+    const result = await sendEmail(data);
+    if (result.success) {
+      toast(
+        "Message sent successfully! Look forward to a response in the near future :)"
       );
-
-      if (response.success === true) {
-        toast.success(
-          "Email Sent! Look out for a reply in the not so distant future :)"
-        );
-      } else {
-        toast.error("Failed to send email. Please try again later.");
-      }
-    } catch (error) {
-      toast.error("Failed to send email. Please try again later.");
-    } finally {
-      setIsLoading(false);
+      reset();
+    } else {
+      toast("Failed to send message!");
     }
-  }
+  };
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col space-y-4">
-      <input className="input" type="email" placeholder="Your Email" required />
-      <input className="input" type="text" placeholder="Subject" required />
-      <textarea className="input" placeholder="Message" required />
-      <button className={`button-primary ${isLoading && "cursor-not-allowed"}`}>
-        Send
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
+      <input
+        className="input"
+        type="text"
+        placeholder="Your Name"
+        required
+        {...register("senderName")}
+      />
+      <input
+        className="input"
+        type="email"
+        placeholder="Your Email"
+        required
+        {...register("senderEmail")}
+      />
+      <input
+        className="input"
+        type="text"
+        placeholder="Subject"
+        required
+        {...register("subject")}
+      />
+      <textarea
+        className="input"
+        placeholder="Message"
+        required
+        {...register("content")}
+      />
+      <button
+        className={`button-primary ${isSubmitting && "cursor-not-allowed"}`}
+      >
+        {isSubmitting ? "Sending..." : "Send"}
       </button>
     </form>
   );
