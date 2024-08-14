@@ -1,6 +1,7 @@
 "use server";
 import { createTransport, type SendMailOptions } from "nodemailer";
 import { EmailFormData } from "../models/email-form";
+import { formatEmailContent } from "../util/formatEmailContent";
 
 export type EmailSendResult = {
   success: boolean;
@@ -13,7 +14,7 @@ export const sendEmail = async (
 ): Promise<EmailSendResult> => {
   const { senderName, senderEmail, subject, content } = formData;
   const transporter = createTransport({
-    service: "Gmail",
+    service: "gmail",
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
@@ -22,12 +23,12 @@ export const sendEmail = async (
       pass: process.env.PERSONAL_EMAIL_APP_PASSWORD,
     },
   });
-
+  const formattedContent = formatEmailContent(senderName, senderEmail, content);
   const mailOptions: SendMailOptions = {
     from: senderEmail,
     to: process.env.PERSONAL_EMAIL,
-    subject: `${senderName}: ${subject}`,
-    text: content,
+    subject: subject,
+    text: formattedContent,
   };
 
   try {
