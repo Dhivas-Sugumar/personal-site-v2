@@ -1,21 +1,11 @@
 "use server";
 import { createTransport, type SendMailOptions } from "nodemailer";
-export type EmailFormData = {
-  senderName: string;
-  senderEmail: string;
-  subject: string;
-  content: string;
-};
+import { EmailFormData } from "../models/email-form";
 
-type EmailSendSuccess = {
-  success: true;
+export type EmailSendResult = {
+  success: boolean;
+  error?: string;
 };
-type EmailSendReject = {
-  success: false;
-  error: string;
-};
-
-export type EmailSendResult = EmailSendSuccess | EmailSendReject;
 
 // TODO: Use Success and Reject Type from nodemailer
 export const sendEmail = async (
@@ -33,7 +23,6 @@ export const sendEmail = async (
     },
   });
 
-  //   return { senderName, senderEmail, subject, content };
   const mailOptions: SendMailOptions = {
     from: senderEmail,
     to: process.env.PERSONAL_EMAIL,

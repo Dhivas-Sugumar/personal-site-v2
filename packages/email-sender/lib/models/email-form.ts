@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const emailFormSchema = z.object({
+export const emailFormSchema = z.object({
   senderName: z.string().min(1, { message: "Please enter your name." }),
   senderEmail: z
     .string()
