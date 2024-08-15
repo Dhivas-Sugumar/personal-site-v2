@@ -35,7 +35,7 @@ function createYarnWorkspace(workspaceName) {
         },
         dependencies: {},
         devDependencies: {
-            typescript: "^4.0.0"
+            typescript: "5.5.4"
         }
     };
 
