@@ -5,9 +5,9 @@ import { aboutMeImages } from "./Constants";
 
 export const AboutMeSection: React.FC = () => {
   return (
-    <Row>
+    <div className="flex flex-row justify-center align-center gap-8">
       <AboutMePolaroid images={aboutMeImages} />
       <AboutMeText />
-    </Row>
+    </div>
   );
 };

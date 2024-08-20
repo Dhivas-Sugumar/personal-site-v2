@@ -3,9 +3,9 @@ import { aboutMeBody, aboutMeGreeting } from "./Constants";
 
 export const AboutMeText: React.FC = () => {
   return (
-    <Column>
-      <h2 className="header2">{aboutMeGreeting}</h2>
-      <p>{aboutMeBody}</p>
-    </Column>
+    <div>
+      <h2 className="header2 text-accent300">{aboutMeGreeting}</h2>
+      <p className="text-accent300"> {aboutMeBody}</p>
+    </div>
   );
 };
