@@ -3,10 +3,11 @@ import { SocialCardList } from "./SocialCardList";
 
 export const SocialSection = () => {
   return (
-    <div className="flex flex-col gap-m">
-      <h2 className="text-center">Social</h2>
-      <SocialCardList />
-      <EmailForm />
-    </div>
+    <>
+      <div className="grid grid-rows-1 grid-cols-2 gap-8">
+        <SocialCardList />
+        <EmailForm />
+      </div>
+    </>
   );
 };
