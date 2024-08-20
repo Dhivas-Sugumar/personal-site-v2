@@ -20,7 +20,7 @@ export const aboutMeImages: PolaroidCardImage[] = [
     imageAlt: "Dhivas in a group of Hackbeanpot organizers",
   },
   {
-    imageSrc: "/assets/about/main-lake-me.webp",
+    imageSrc: "/assets/about/maine-lake-me.webp",
     imageAlt: "Dhivas in front of a lake in Maine",
   },
   {
