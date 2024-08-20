@@ -20,7 +20,7 @@ export const AboutMePolaroid: React.FC<AboutMePolaroidProps> = ({ images }) => {
   }, [images]);
 
   const currentImage = images[currentImageIndex];
-  console.log(currentImage);
+
   return (
     <div>
       <PolaroidCard
