@@ -1,20 +1,42 @@
-import { PolaroidCardImage } from "@/design-system"
+import { PolaroidCardImage } from "@/design-system";
 
-export const aboutMeGreeting = "Hiya,"
+export const aboutMeGreeting = "Hiya,";
 
-export const aboutMeBody = 'I\'m a software engineer with a passion for creating beautiful, user-friendly applications. I have experience with a variety of technologies, including React, TypeScript, and Node.js. I\'m always looking for new opportunities to learn and grow as a developer.'
+export const aboutMeBody =
+  "I'm a software engineer with a passion for creating beautiful, user-friendly applications. I have experience with a variety of technologies, including React, TypeScript, and Node.js. I'm always looking for new opportunities to learn and grow as a developer.";
 
-export const aboutMeImages : PolaroidCardImage[] = [
-    {
-        imageSrc: "/images/IMG_20210528_173715.jpg",
-        imageAlt: "A photo of me in a park"
-    },
-    {
-        imageSrc: "/images/IMG_20210528_173715.jpg",
-        imageAlt: "A photo of me in a park"
-    },
-    {
-        imageSrc: "/images/IMG_20210528_173715.jpg",
-        imageAlt: "A photo of me in a park"
-    }
-]
+export const aboutMeImages: PolaroidCardImage[] = [
+  {
+    imageSrc: "/assets/about/encore.webp",
+    imageAlt: "Dhivas and friends infront of Encore sign",
+  },
+  {
+    imageSrc: "/assets/about/fenway-graduation-me.webp",
+    imageAlt:
+      "Dhivas in graduation cap and gown in Fenway with Northeastern university mascot",
+  },
+  {
+    imageSrc: "/assets/about/hackbeanpot.webp",
+    imageAlt: "Dhivas in a group of Hackbeanpot organizers",
+  },
+  {
+    imageSrc: "/assets/about/main-lake-me.webp",
+    imageAlt: "Dhivas in front of a lake in Maine",
+  },
+  {
+    imageSrc: "/assets/about/nyc-me.webp",
+    imageAlt: "Dhivas with the New York City skyline in the background",
+  },
+  {
+    imageSrc: "/assets/about/puerto-rico-rocks-me.webp",
+    imageAlt: "Dhivas in between two rocks in Puerto Rico",
+  },
+  {
+    imageSrc: "/assets/about/roomies.webp",
+    imageAlt: "Dhivas and roommates dressed up in costumes for Halloween",
+  },
+  {
+    imageSrc: "/assets/about/vermont-mountain-me.webp",
+    imageAlt: "Dhivas in contrast to the mountains in Vermont",
+  },
+];
