@@ -1,12 +1,11 @@
-import { Header } from "@/design-system";
+import { Header, PageContainer } from "@/design-system";
 import { ExperienceSection } from "@/experience/src/components/ExperienceSection";
 
 export default function Page() {
   return (
-    <>
-      <Header currentPage="Experience" />
+    <PageContainer displayHeader={true} displayNavBar={true} currentPage={"Experience"}>
       <h1>Experience</h1>
       <ExperienceSection />
-    </>
+    </PageContainer>
   );
 }

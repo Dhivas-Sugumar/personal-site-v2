@@ -20,7 +20,6 @@ export default function RootLayout({
       </head>
       <body className="bg-neutral0">
         {children}
-        <NavigationBarContainer />
         <ToastProvider />
       </body>
     </html>
