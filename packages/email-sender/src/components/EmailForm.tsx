@@ -1,7 +1,6 @@
 "use client";
 
 import { sendEmail } from "@/email-sender/lib/actions/send-email";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -9,6 +8,7 @@ import {
   EmailFormData,
   emailFormSchema,
 } from "@/email-sender/lib/models/email-form";
+import { Button } from "@/design-system/src/button/button";
 
 export const EmailForm: React.FC = () => {
   const {
@@ -60,11 +60,10 @@ export const EmailForm: React.FC = () => {
         required
         {...register("content")}
       />
-      <button
-        className={`button-primary ${isSubmitting && "cursor-not-allowed"}`}
-      >
-        {isSubmitting ? "Sending..." : "Send"}
-      </button>
+      <Button
+        className={`${isSubmitting && "cursor-not-allowed"}`}
+        label={isSubmitting ? "Sending" : "Send"}
+      />
     </form>
   );
 };
