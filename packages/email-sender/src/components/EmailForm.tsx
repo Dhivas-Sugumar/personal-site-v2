@@ -8,6 +8,7 @@ import {
   EmailFormData,
   emailFormSchema,
 } from "@/email-sender/lib/models/email-form";
+import { Button } from "@/design-system/src/button/button";
 
 export const EmailForm: React.FC = () => {
   const {
@@ -59,9 +60,10 @@ export const EmailForm: React.FC = () => {
         required
         {...register("content")}
       />
-      <button className={`button- ${isSubmitting && "cursor-not-allowed"}`}>
-        {isSubmitting ? "Sending..." : "Send"}
-      </button>
+      <Button
+        className={`${isSubmitting && "cursor-not-allowed"}`}
+        label={isSubmitting ? "Sending" : "Send"}
+      />
     </form>
   );
 };
