@@ -3,7 +3,7 @@ import { ExperienceCardProps } from "@/experience/src/components/ExperienceCard"
 const universityCard: ExperienceCardProps = {
   imageSrc: "northeastern.svg",
   imageAlt: "Northeastern University Logo",
-  name: "Northeastern University",
+  companyName: "Northeastern University",
   jobTitle: "Bachelor of Science in Computer Science",
   location: "Boston, MA",
   description:
