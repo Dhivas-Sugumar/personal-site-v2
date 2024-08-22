@@ -1,5 +1,5 @@
 import { CardList } from "@/design-system/src/cards/CardList";
-import { ExperienceCard } from "@/design-system/src/cards/ExperienceCard";
+import { ExperienceCard } from "@/experience/src/components/ExperienceCard";
 import { experienceCards } from "./Constants";
 
 export const ExperienceCardList: React.FC = () => {
