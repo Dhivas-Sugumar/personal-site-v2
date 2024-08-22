@@ -14,18 +14,21 @@ export type TechnologiesProps = {
 
 export type ProjectCardProps = BaseCardProps & {
   name: string;
+  description: string; 
   technologies: TechnologiesProps[];
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   technologies,
+  description,
   ...props
 }) => {
   return (
     <BaseCard polaroidVariant="default" {...props}>
-      <h2>{name}</h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-col ">
+        <h2>{name}</h2>
+        <p className="text-accent300">{description}</p>
         <TechnologiesMarquee technologies={technologies} />
       </div>
     </BaseCard>
