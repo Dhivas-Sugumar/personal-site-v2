@@ -9,10 +9,10 @@ export type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   return (
-    <Row contentJustify="between" className="bg-accent300 p-md">
-      <h3>{headerText}</h3>
+    <div className="flex flex-row bg-accent300 p-md justify-between">
+     <h3 className="text-neutral0">{headerText}</h3>
       <Icon iconAlt={"Dhivas Sugumar"} size={"small"} variant={"dhivasLogo"} />
-      <h3>{currentPage}</h3>
-    </Row>
+      <h3 className="text-neutral0">{currentPage}</h3>
+    </div>
   );
 };
