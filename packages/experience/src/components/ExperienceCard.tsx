@@ -7,7 +7,7 @@ export type ExperienceCardProps = BaseCardProps & {
   jobTitle: string;
   location: string;
   companyName: string;
-  description: string;
+  description?: string;
 };
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({

@@ -1,7 +1,7 @@
 import { ExperienceCardProps } from "@/experience/src/components/ExperienceCard";
 
 const mhealthLabResearchAssistant: ExperienceCardProps = {
-  imageSrc: "mhealthlab.svg",
+  imageSrc: "/northeastern-university.png",
   imageAlt: "mHealth Lab Logo",
   companyName: "Northeastern University MHealth Research Lab",
   jobTitle: "Research Assistant",
@@ -12,7 +12,7 @@ const mhealthLabResearchAssistant: ExperienceCardProps = {
 };
 
 const teachingAssistantFundies: ExperienceCardProps = {
-  imageSrc: "khoury.svg",
+  imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Teaching Assistant - Fundamentals of Computer Science 2",
@@ -23,7 +23,7 @@ const teachingAssistantFundies: ExperienceCardProps = {
 };
 
 const hackBeanPotSoftwareEngineer: ExperienceCardProps = {
-  imageSrc: "hackbeanpot.svg",
+  imageSrc: "/hackbeanpot.png",
   imageAlt: "HackBeanpot Logo",
   companyName: "HackBeanpot",
   jobTitle: "Software Engineer",
@@ -34,7 +34,7 @@ const hackBeanPotSoftwareEngineer: ExperienceCardProps = {
 };
 
 const clora1: ExperienceCardProps = {
-  imageSrc: "clora.svg",
+  imageSrc: "/clora.png",
   imageAlt: "Clora Logo",
   companyName: "Clora",
   jobTitle: "Software Development Engineer Intern",
@@ -45,7 +45,7 @@ const clora1: ExperienceCardProps = {
 };
 
 const teachingAssistantCoop: ExperienceCardProps = {
-  imageSrc: "khoury.svg",
+  imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Professional Development for Co-op Teaching Assistant",
@@ -56,7 +56,7 @@ const teachingAssistantCoop: ExperienceCardProps = {
 };
 
 const hackBeanPotDirector: ExperienceCardProps = {
-  imageSrc: "hackbeanpot.svg",
+  imageSrc: "/hackbeanpot.png",
   imageAlt: "HackBeanpot Logo",
   companyName: "HackBeanpot",
   jobTitle: "Co-Executive Director",
@@ -67,7 +67,7 @@ const hackBeanPotDirector: ExperienceCardProps = {
 };
 
 const clora2: ExperienceCardProps = {
-  imageSrc: "clora.svg",
+  imageSrc: "/clora.png",
   imageAlt: "Clora Logo",
   companyName: "Clora",
   jobTitle: "Software Development Engineer Intern",
@@ -89,7 +89,7 @@ const flexcar: ExperienceCardProps = {
 };
 
 const teachingAssistantCoop2: ExperienceCardProps = {
-  imageSrc: "khoury.svg",
+  imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Professional Development for Co-op Teaching Assistant",
