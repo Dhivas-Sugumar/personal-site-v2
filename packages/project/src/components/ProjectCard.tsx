@@ -5,6 +5,7 @@ import {
   BaseCardProps,
 } from "../../../design-system/src/cards/BaseCard";
 import { IconProps } from "@/design-system/src/Icon";
+import { TechnologiesMarquee } from "@/design-system/src/marquee/TechnologiesMarquee";
 
 export type TechnologiesProps = {
   name: string;
@@ -12,19 +13,23 @@ export type TechnologiesProps = {
 };
 
 export type ProjectCardProps = BaseCardProps & {
+  name: string;
+  description: string; 
   technologies: TechnologiesProps[];
 };
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
   technologies,
+  description,
   ...props
 }) => {
   return (
     <BaseCard polaroidVariant="default" {...props}>
-      <div className="flex flex-wrap">
-        {technologies.map((tech) => (
-          <TechnologyCard key={tech.name} name={tech.name} icon={tech.icon} />
-        ))}
+      <div className="flex flex-col ">
+        <h2>{name}</h2>
+        <p className="text-accent300">{description}</p>
+        <TechnologiesMarquee technologies={technologies} />
       </div>
     </BaseCard>
   );
