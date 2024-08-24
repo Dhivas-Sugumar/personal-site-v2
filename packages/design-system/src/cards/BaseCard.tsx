@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import { PolaroidCard } from "./PolaroidCard";
+import { GradientShadow } from "../shadow/GradientShadow";
 
 export type BaseCardProps = PropsWithChildren & {
   imageSrc: string;
@@ -18,7 +19,13 @@ export const BaseCard: React.FC<BaseCardProps> = ({
 }) => {
   const dateRange = `${startDate} - ${endDate}`;
   return (
-    <div className="flex bg-neutral0 shadow-lg shadow-primary100 rounded-xl gap-x-6">
+    // <div className="flex bg-neutral0 shadow-lg shadow-primary100 rounded-xl gap-x-6">
+    <GradientShadow
+      gradientColor1={"primary100"}
+      gradientColor2={"tertiary100"}
+      gradientColor3={"secondary100"}
+      cardBackgroundColor="neutral0"
+    >
       <PolaroidCard
         imageSrc={imageSrc}
         imageAlt={imageAlt}
@@ -26,6 +33,8 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         variant={children ? "small" : "default"}
       />
       {children}
-    </div>
+    </GradientShadow>
+
+    // </div>
   );
 };
