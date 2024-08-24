@@ -19,7 +19,6 @@ export const BaseCard: React.FC<BaseCardProps> = ({
 }) => {
   const dateRange = `${startDate} - ${endDate}`;
   return (
-    // <div className="flex bg-neutral0 shadow-lg shadow-primary100 rounded-xl gap-x-6">
     <GradientShadow
       gradientColor1={"primary100"}
       gradientColor2={"tertiary100"}
@@ -34,7 +33,5 @@ export const BaseCard: React.FC<BaseCardProps> = ({
       />
       {children}
     </GradientShadow>
-
-    // </div>
   );
 };

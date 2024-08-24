@@ -1,5 +1,6 @@
 import { BaseCard } from "@/design-system/src/cards/BaseCard";
 import { Icon, IconVariant } from "@/design-system/src/Icon";
+import { GradientShadow } from "@/design-system/src/shadow/GradientShadow";
 import Link from "next/link";
 
 export type SocialCardProps = {
@@ -19,13 +20,18 @@ export const SocialCard: React.FC<SocialCardProps> = ({
 }) => {
   return (
     <Link href={link}>
-      <div className="flex bg-neutral0 shadow-lg shadow-primary100 rounded-xl">
+      <GradientShadow
+        gradientColor1={"primary100"}
+        gradientColor2={"tertiary100"}
+        gradientColor3={"secondary100"}
+        cardBackgroundColor="neutral0"
+      >
         <Icon variant={iconVariant} iconAlt={iconAlt} />
         <div className="flex flex-col px-l">
           <h3 className="header3">{name}</h3>
           <p className="body">{username}</p>
         </div>
-      </div>
+      </GradientShadow>
     </Link>
   );
 };

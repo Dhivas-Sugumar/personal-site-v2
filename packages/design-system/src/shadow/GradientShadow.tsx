@@ -14,6 +14,7 @@ export const GradientShadow: React.FC<GradientShadowProps> = ({
   gradientColor2,
   gradientColor3,
   isAnimated,
+  cardBackgroundColor,
   children,
 }) => {
   return (
@@ -23,7 +24,9 @@ export const GradientShadow: React.FC<GradientShadowProps> = ({
           isAnimated && "animate-pulse"
         } -inset-2 rounded-full bg-gradient-to-r from-${gradientColor1} via-${gradientColor2} to-${gradientColor3} opacity-75 blur`}
       />
-      <div className="relative flex rounded-lg bg-neutral0">{children}</div>
+      <div className={`relative flex rounded-lg bg-${cardBackgroundColor}`}>
+        {children}
+      </div>
     </div>
   );
 };
