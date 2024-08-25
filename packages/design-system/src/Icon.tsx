@@ -1,6 +1,8 @@
 "use client";
 
-// TODO: Fix the icon component to not use an await on import using a useEffect
+// TODO: Remove this Icon component and replace it with using SiReact from the react-simple-icons package
+// Still make it so that variant can be passed in as a prop
+
 import Image from "next/image";
 import { useIconImageVariant } from "./hooks/useIconImageVariant";
 import { useState, useEffect } from "react";
