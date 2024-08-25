@@ -1,3 +1,4 @@
+import { SiReact } from "@icons-pack/react-simple-icons";
 import { Icon, IconProps } from "../Icon";
 
 export type TechnologyCardProps = {

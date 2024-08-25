@@ -10,8 +10,11 @@ export function Marque<T>({
   MarqueeComponent,
 }: MarqueeProps<T>): JSX.Element {
   return (
-    <div className="bg-neutral100">
-      <RNFastMarquee>
+    <div className="bg-neutral0 w-fit ">
+      <RNFastMarquee
+        pauseOnHover={true}
+        className="justify-center items-center"
+      >
         {items.map((item, index) => (
           <MarqueeComponent key={index} {...item} />
         ))}
