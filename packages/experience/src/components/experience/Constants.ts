@@ -1,7 +1,7 @@
 import { ExperienceCardProps } from "@/experience/src/components/ExperienceCard";
 
 const mhealthLabResearchAssistant: ExperienceCardProps = {
-  imageSrc: "/northeastern-university.png",
+  // imageSrc: "/northeastern-university.png",
   imageAlt: "mHealth Lab Logo",
   companyName: "Northeastern University MHealth Research Lab",
   jobTitle: "Research Assistant",
@@ -12,7 +12,7 @@ const mhealthLabResearchAssistant: ExperienceCardProps = {
 };
 
 const teachingAssistantFundies: ExperienceCardProps = {
-  imageSrc: "/khoury-college.png",
+  // imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Teaching Assistant - Fundamentals of Computer Science 2",
@@ -23,7 +23,7 @@ const teachingAssistantFundies: ExperienceCardProps = {
 };
 
 const hackBeanPotSoftwareEngineer: ExperienceCardProps = {
-  imageSrc: "/hackbeanpot.png",
+  // imageSrc: "/hackbeanpot.png",
   imageAlt: "HackBeanpot Logo",
   companyName: "HackBeanpot",
   jobTitle: "Software Engineer",
@@ -34,7 +34,7 @@ const hackBeanPotSoftwareEngineer: ExperienceCardProps = {
 };
 
 const clora1: ExperienceCardProps = {
-  imageSrc: "/clora.png",
+  // imageSrc: "/clora.png",
   imageAlt: "Clora Logo",
   companyName: "Clora",
   jobTitle: "Software Development Engineer Intern",
@@ -45,7 +45,7 @@ const clora1: ExperienceCardProps = {
 };
 
 const teachingAssistantCoop: ExperienceCardProps = {
-  imageSrc: "/khoury-college.png",
+  // imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Professional Development for Co-op Teaching Assistant",
@@ -56,7 +56,7 @@ const teachingAssistantCoop: ExperienceCardProps = {
 };
 
 const hackBeanPotDirector: ExperienceCardProps = {
-  imageSrc: "/hackbeanpot.png",
+  // imageSrc: "/hackbeanpot.png",
   imageAlt: "HackBeanpot Logo",
   companyName: "HackBeanpot",
   jobTitle: "Co-Executive Director",
@@ -67,7 +67,7 @@ const hackBeanPotDirector: ExperienceCardProps = {
 };
 
 const clora2: ExperienceCardProps = {
-  imageSrc: "/clora.png",
+  // imageSrc: "/clora.png",
   imageAlt: "Clora Logo",
   companyName: "Clora",
   jobTitle: "Software Development Engineer Intern",
@@ -78,7 +78,7 @@ const clora2: ExperienceCardProps = {
 };
 
 const flexcar: ExperienceCardProps = {
-  imageSrc: "flexcar.svg",
+  // imageSrc: "flexcar.svg",
   imageAlt: "Flexcar Logo",
   companyName: "Flexcar",
   jobTitle: "Software Development Engineer Intern",
@@ -89,7 +89,7 @@ const flexcar: ExperienceCardProps = {
 };
 
 const teachingAssistantCoop2: ExperienceCardProps = {
-  imageSrc: "/khoury-college.png",
+  // imageSrc: "/khoury-college.png",
   imageAlt: "Khoury College of Computer Science Logo",
   companyName: "Khoury college of Computer Sciences",
   jobTitle: "Professional Development for Co-op Teaching Assistant",
@@ -100,7 +100,7 @@ const teachingAssistantCoop2: ExperienceCardProps = {
 };
 
 const flexcarPartTime: ExperienceCardProps = {
-  imageSrc: "flexcar.svg",
+  // imageSrc: "flexcar.svg",
   imageAlt: "Flexcar Logo",
   companyName: "Flexcar",
   jobTitle: "Software Development Engineer 1 - Part Time",
@@ -111,7 +111,7 @@ const flexcarPartTime: ExperienceCardProps = {
 };
 
 const flexcarFullTime: ExperienceCardProps = {
-  imageSrc: "flexcar.svg",
+  // imageSrc: "flexcar.svg",
   imageAlt: "Flexcar Logo",
   companyName: "Flexcar",
   jobTitle: "Software Development Engineer 1",
