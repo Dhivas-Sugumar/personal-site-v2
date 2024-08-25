@@ -19,14 +19,13 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   return (
     <BaseCard polaroidVariant="small" {...props}>
-      <div className="grid grid-cols-2">
-        <div className="row-span-7">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-row justify-between">
           <h2>{companyName}</h2>
-          <p className="body1 text-accent300">{description}</p>
+          {/* <p className="text-accent300">{location}</p> */}
         </div>
-        <div>
-          <p className="text-accent300 text-end">{location}</p>
-        </div>
+        <h4>{jobTitle}</h4>
+        <p className="text-accent300">{description}</p>
       </div>
     </BaseCard>
   );

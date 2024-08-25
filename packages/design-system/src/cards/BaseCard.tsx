@@ -33,7 +33,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
           variant={children ? "small" : "default"}
         />
       )}
-      {children}
+      <div className="ml-6">{children}</div>
     </GradientShadow>
   );
 };
