@@ -32,34 +32,28 @@ export const EmailForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col space-y-4 border rounded-xl border-accent300 p-4 h-fit"
+    >
+      <label className="text-accent300">Name</label>
       <input
-        className="input"
+        className="rounded-ld border-accent300"
         type="text"
-        placeholder="Your Name"
         required
         {...register("senderName")}
       />
+      <label className="text-accent300">Email</label>
       <input
         className="input"
         type="email"
-        placeholder="Your Email"
         required
         {...register("senderEmail")}
       />
-      <input
-        className="input"
-        type="text"
-        placeholder="Subject"
-        required
-        {...register("subject")}
-      />
-      <textarea
-        className="input"
-        placeholder="Message"
-        required
-        {...register("content")}
-      />
+      <label className="text-accent300">Subject</label>
+      <input className="input" type="text" required {...register("subject")} />
+      <label className="text-accent300">Message</label>
+      <textarea className="input" required {...register("content")} />
       <Button
         className={`${isSubmitting && "cursor-not-allowed"}`}
         label={isSubmitting ? "Sending" : "Send"}

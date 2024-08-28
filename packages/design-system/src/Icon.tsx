@@ -1,157 +1,166 @@
-"use client";
-
-// TODO: Remove this Icon component and replace it with using SiReact from the react-simple-icons package
-// Still make it so that variant can be passed in as a prop
-
-import Image from "next/image";
-import { useIconImageVariant } from "./hooks/useIconImageVariant";
-import { useState, useEffect } from "react";
+import {
+  SiRuby,
+  SiTypescript,
+  SiBootstrap,
+  SiCss3,
+  SiDocker,
+  SiExpress,
+  SiFirebase,
+  SiFigma,
+  SiGit,
+  SiGithub,
+  SiGooglecloud,
+  SiGraphql,
+  SiHeroku,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiJupyter,
+  SiMongodb,
+  SiNetlify,
+  SiNestjs,
+  SiNumpy,
+  SiOpencv,
+  SiPandas,
+  SiPostman,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiRemix,
+  SiRubyonrails,
+  SiScikitlearn,
+  SiSqlite,
+  SiTailwindcss,
+  SiDatadog,
+  SiVercel,
+  SiLinkedin,
+  SiPhotobucket,
+  SiFastapi,
+  SiExpo,
+  IconType,
+  SiMinutemailer,
+} from "@icons-pack/react-simple-icons";
 
 export type IconVariant =
   | "ruby"
-  | "react"
-  | "graphql"
   | "typescript"
-  | "dhivasLogo"
-  | "resume"
-  | "project"
-  | "mail"
-  | "photo"
-  | "java"
-  | "python"
-  | "html"
-  | "css"
-  | "javascript"
-  | "sql"
-  | "mongodb"
-  | "rails"
-  | "reactNative"
-  | "fastapi"
-  | "nextjs"
-  | "nestjs"
-  | "remix"
-  | "express"
-  | "prsima"
-  | "expo"
-  | "tailwind"
   | "bootstrap"
-  | "pandas"
-  | "numpy"
-  | "pillow"
-  | "scikitLearn"
-  | "opencv"
-  | "jest"
-  | "minitest"
-  | "rspec"
+  | "css"
+  | "docker"
+  | "express"
+  | "firebase"
+  | "figma"
   | "git"
   | "github"
-  | "datadog"
-  | "heroku"
-  | "netlify"
-  | "vercel"
   | "googleCloudPlatform"
-  | "firebase"
-  | "docker"
-  | "aws"
+  | "graphql"
+  | "heroku"
+  | "html"
+  | "java"
+  | "javascript"
+  | "jest"
   | "jupyterNotebook"
-  | "vsCode"
-  | "jetbrainsIDEsuite"
+  | "mongodb"
+  | "netlify"
+  | "nestjs"
+  | "nextjs"
+  | "numpy"
+  | "opencv"
+  | "pandas"
+  | "pillow"
   | "postman"
-  | "figma"
-  | "linkedin";
+  | "prsima"
+  | "python"
+  | "react"
+  | "reactNative"
+  | "remix"
+  | "rails"
+  | "rspec"
+  | "scikitLearn"
+  | "sql"
+  | "tailwind"
+  | "vsCode"
+  | "datadog"
+  | "aws"
+  | "vercel"
+  | "linkedin"
+  | "email"
+  | "photo"
+  | "resume"
+  | "project"
+  | "dhivasLogo"
+  | "fastapi"
+  | "expo"
+  | "minitest"
+  | "jetbrainsIDEsuite";
 
-export type IconSize = "small" | "medium" | "large";
+const icons: Record<IconVariant, IconType | null> = {
+  ruby: SiRuby,
+  typescript: SiTypescript,
+  bootstrap: SiBootstrap,
+  css: SiCss3,
+  docker: SiDocker,
+  express: SiExpress,
+  firebase: SiFirebase,
+  figma: SiFigma,
+  git: SiGit,
+  github: SiGithub,
+  googleCloudPlatform: SiGooglecloud,
+  graphql: SiGraphql,
+  heroku: SiHeroku,
+  html: SiHtml5,
+  java: null,
+  javascript: SiJavascript,
+  jest: SiJest,
+  jupyterNotebook: SiJupyter,
+  mongodb: SiMongodb,
+  netlify: SiNetlify,
+  nestjs: SiNestjs,
+  nextjs: null,
+  numpy: SiNumpy,
+  opencv: SiOpencv,
+  pandas: SiPandas,
+  pillow: null,
+  postman: SiPostman,
+  prsima: SiPrisma,
+  python: SiPython,
+  react: SiReact,
+  reactNative: null,
+  remix: SiRemix,
+  rails: SiRubyonrails,
+  rspec: null,
+  scikitLearn: SiScikitlearn,
+  sql: SiSqlite,
+  tailwind: SiTailwindcss,
+  vsCode: null,
+  datadog: SiDatadog,
+  aws: null,
+  vercel: SiVercel,
+  linkedin: SiLinkedin,
+  email: SiMinutemailer,
+  photo: SiPhotobucket,
+  resume: null,
+  project: null,
+  dhivasLogo: null,
+  fastapi: SiFastapi,
+  expo: SiExpo,
+  minitest: null,
+  jetbrainsIDEsuite: null,
+};
 
 export type IconProps = {
-  iconAlt: string;
-  size?: IconSize;
   variant: IconVariant;
+  size?: "small" | "medium";
+  tint?: string;
 };
-
 export const Icon: React.FC<IconProps> = ({
-  iconAlt,
-  size = "medium",
   variant,
+  size,
+  tint = "#ffff",
 }) => {
-  const { width, height } = useIconImageVariant(size);
-  const [iconSrc, setIconSrc] = useState<string>("");
-
-  useEffect(() => {
-    const importIcon = async () => {
-      try {
-        const icon = await import(`../assets/icons/${variant}.svg`);
-        setIconSrc(icon.default.src);
-      } catch (error) {
-        console.error(`Failed to load icon: ${variant}`, error);
-        setIconSrc("");
-      }
-    };
-
-    importIcon();
-  }, [variant]);
-
-  if (!iconSrc) {
-    return null; // or a placeholder
-  }
-
-  return <Image src={iconSrc} width={width} height={height} alt={iconAlt} />;
+  const iconDimensions = size === "small" ? 20 : 40;
+  const IconComponent = icons[variant];
+  return IconComponent ? (
+    <IconComponent size={iconDimensions} color={tint} />
+  ) : null;
 };
-
-/*
-Icon 
-Languages 
-- Java
-- Python 
-- typescript
-- Ruby
--html 
-- css 
-- javascript
-- sql 
-- mongodb 
-- graphql
-
-frameworks 
-- Rails 
-- React 
-- React Native *
-- FastAPI 
-- next.js 
-- nest.js * 
-- remix * 
-- express* 
-- pRSIMA 
-- Expo 
-- tailwind 
-- Bootstrap
-- pandas 
-- numpy * 
-- pillow * 
-- scikit learn 
-- OpenCV 
-
-testing frameworks 
-- Jest
-- Minitest *
-- Rspec *
-
-Developer tools 
-- Git 
-- Github 
-- Datadog 
-- Heorku 
-- Netlify
-- Vercel
-- Google Cloud PLatform 
-- Firebase 
-- Docker 
-- AWS 
-- Jupyer Notebook 
-- VS Code 
-- Jetbrains IDE suite 
-- Postman 
-- Figma 
-
-Dhivas Sugumar Logo 
-
-*/
