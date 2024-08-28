@@ -38,6 +38,7 @@ import {
   SiFastapi,
   SiExpo,
   IconType,
+  SiMinutemailer,
 } from "@icons-pack/react-simple-icons";
 
 export type IconVariant =
@@ -83,7 +84,7 @@ export type IconVariant =
   | "aws"
   | "vercel"
   | "linkedin"
-  | "mail"
+  | "email"
   | "photo"
   | "resume"
   | "project"
@@ -136,7 +137,7 @@ const icons: Record<IconVariant, IconType | null> = {
   aws: null,
   vercel: SiVercel,
   linkedin: SiLinkedin,
-  mail: null,
+  email: SiMinutemailer,
   photo: SiPhotobucket,
   resume: null,
   project: null,
@@ -147,12 +148,16 @@ const icons: Record<IconVariant, IconType | null> = {
   jetbrainsIDEsuite: null,
 };
 
-type IconProps = {
+export type IconProps = {
   variant: IconVariant;
   size?: "small" | "medium";
-  tint: string;
+  tint?: string;
 };
-export const Icon: React.FC<IconProps> = ({ variant, size, tint }) => {
+export const Icon: React.FC<IconProps> = ({
+  variant,
+  size,
+  tint = "#ffff",
+}) => {
   const iconDimensions = size === "small" ? 20 : 40;
   const IconComponent = icons[variant];
   return IconComponent ? (

@@ -38,7 +38,7 @@ export const EmailForm: React.FC = () => {
     >
       <label className="text-accent300">Name</label>
       <input
-        className="input"
+        className="rounded-ld border-accent300"
         type="text"
         required
         {...register("senderName")}
