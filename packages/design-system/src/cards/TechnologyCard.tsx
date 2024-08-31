@@ -1,18 +1,18 @@
 import { SiReact } from "@icons-pack/react-simple-icons";
-import { Icon, IconProps } from "../Icon";
+import { Icon, IconProps, IconVariant } from "../Icon";
 
 export type TechnologyCardProps = {
   name: string;
-  icon: IconProps;
+  iconVariant: IconVariant;
 };
 
 export const TechnologyCard: React.FC<TechnologyCardProps> = ({
   name,
-  icon,
+  iconVariant,
 }) => {
   return (
     <div className="flex flex-col">
-      <Icon variant="datadog" size="medium" tint="#ffff" />
+      <Icon variant={iconVariant} size="medium" tint="#ffff" />
       <h4>{name}</h4>
     </div>
   );
