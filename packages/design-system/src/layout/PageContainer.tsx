@@ -16,9 +16,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   return (
     <>
       {displayHeader && <Header currentPage={currentPage} />}
-      <div className="grid grid-cols-1 min-h-screen w-full px-20">
-        {children}
-      </div>
+      <div className="flex flex-col w-full px-20">{children}</div>
       {displayNavBar && <NavigationBarContainer />}
     </>
   );

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { NavigationBarContainer } from "@/design-system/src/navigation-bar/NavigationBarContainer";
 import { ToastProvider } from "@/design-system/src/provider/ToastProvider";
 
 export const metadata: Metadata = {

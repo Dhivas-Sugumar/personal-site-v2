@@ -3,6 +3,121 @@ import { ExperienceYears } from "../../types";
 export const experienceYears: ExperienceYears = {
   years: [
     {
+      year: "2024",
+      experiences: [
+        {
+          imageAlt: "Flexcar Logo",
+          companyName: "Flexcar",
+          jobTitle: "Software Development Engineer 1",
+          startDate: "July 2024",
+          endDate: "Present",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "HackBeanpot Logo",
+          companyName: "HackBeanpot",
+          jobTitle: "Co-Executive Director",
+          startDate: "Apr 2023",
+          endDate: "Apr 2024",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "Khoury College of Computer Science Logo",
+          companyName: "Khoury College of Computer Sciences",
+          jobTitle: "Professional Development for Co-op Teaching Assistant",
+          startDate: "Jan 2024",
+          endDate: "May 2024",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "Flexcar Logo",
+          companyName: "Flexcar",
+          jobTitle: "Software Development Engineer 1 - Part Time",
+          startDate: "Jan 2024",
+          endDate: "July 2024",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+    },
+    {
+      year: "2023",
+      experiences: [
+        {
+          imageAlt: "Flexcar Logo",
+          companyName: "Flexcar",
+          jobTitle: "Software Development Engineer Intern",
+          startDate: "July 2023",
+          endDate: "Dec 2023",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "Clora Logo",
+          companyName: "Clora",
+          jobTitle: "Software Development Engineer Intern",
+          startDate: "May 2023",
+          endDate: "June 2023",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "HackBeanpot Logo",
+          companyName: "HackBeanpot",
+          jobTitle: "Software Engineer",
+          startDate: "Apr 2022",
+          endDate: "Apr 2023",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "Khoury College of Computer Science Logo",
+          companyName: "Khoury College of Computer Sciences",
+          jobTitle: "Professional Development for Co-op Teaching Assistant",
+          startDate: "Jan 2023",
+          endDate: "May 2023",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+    },
+    {
+      year: "2022",
+      experiences: [
+        {
+          imageAlt: "Clora Logo",
+          companyName: "Clora",
+          jobTitle: "Software Development Engineer Intern",
+          startDate: "July 2022",
+          endDate: "Dec 2022",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          imageAlt: "Khoury College of Computer Science Logo",
+          companyName: "Khoury College of Computer Sciences",
+          jobTitle: "Teaching Assistant - Fundamentals of Computer Science 2",
+          startDate: "Jan 2022",
+          endDate: "July 2022",
+          location: "Boston, MA",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+    },
+    {
       year: "2021",
       experiences: [
         {
@@ -12,112 +127,8 @@ export const experienceYears: ExperienceYears = {
           startDate: "March 2021",
           endDate: "Nov 2022",
           location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-      ],
-    },
-    {
-      year: "2022",
-      experiences: [
-        {
-          imageAlt: "Khoury College of Computer Science Logo",
-          companyName: "Khoury College of Computer Sciences",
-          jobTitle: "Teaching Assistant - Fundamentals of Computer Science 2",
-          startDate: "Jan 2022",
-          endDate: "July 2022",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "HackBeanpot Logo",
-          companyName: "HackBeanpot",
-          jobTitle: "Software Engineer",
-          startDate: "Apr 2022",
-          endDate: "Apr 2023",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "Clora Logo",
-          companyName: "Clora",
-          jobTitle: "Software Development Engineer Intern",
-          startDate: "July 2022",
-          endDate: "Dec 2022",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-      ],
-    },
-    {
-      year: "2023",
-      experiences: [
-        {
-          imageAlt: "Khoury College of Computer Science Logo",
-          companyName: "Khoury College of Computer Sciences",
-          jobTitle: "Professional Development for Co-op Teaching Assistant",
-          startDate: "Jan 2023",
-          endDate: "May 2023",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "HackBeanpot Logo",
-          companyName: "HackBeanpot",
-          jobTitle: "Co-Executive Director",
-          startDate: "Apr 2023",
-          endDate: "Apr 2024",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "Clora Logo",
-          companyName: "Clora",
-          jobTitle: "Software Development Engineer Intern",
-          startDate: "May 2023",
-          endDate: "June 2023",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "Flexcar Logo",
-          companyName: "Flexcar",
-          jobTitle: "Software Development Engineer Intern",
-          startDate: "July 2023",
-          endDate: "Jan 2024",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-      ],
-    },
-    {
-      year: "2024",
-      experiences: [
-        {
-          imageAlt: "Khoury College of Computer Science Logo",
-          companyName: "Khoury College of Computer Sciences",
-          jobTitle: "Professional Development for Co-op Teaching Assistant",
-          startDate: "Jan 2024",
-          endDate: "May 2024",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "Flexcar Logo",
-          companyName: "Flexcar",
-          jobTitle: "Software Development Engineer 1 - Part Time",
-          startDate: "Jan 2024",
-          endDate: "July 2024",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
-        },
-        {
-          imageAlt: "Flexcar Logo",
-          companyName: "Flexcar",
-          jobTitle: "Software Development Engineer 1",
-          startDate: "July 2024",
-          endDate: "Present",
-          location: "Boston, MA",
-          description: "Fill this in with actual description",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
       ],
     },
