@@ -1,4 +1,4 @@
-import { TechnologyCard, TechnologyCardProps } from "../cards/TechnologyCard";
+import { TechnologyCard, TechnologyCardProps } from "../cards/technology-card";
 import { Marque } from "./Marquee";
 
 export type TechnologiesMarqueeProps = {

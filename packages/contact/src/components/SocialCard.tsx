@@ -1,4 +1,4 @@
-import { BaseCard } from "@/design-system/src/cards/BaseCard";
+import { BaseCard } from "@/design-system/src/cards/base-card";
 import { Icon, IconProps, IconVariant } from "@/design-system/src/Icon";
 import { GradientShadow } from "@/design-system/src/shadow/GradientShadow";
 import Link from "next/link";

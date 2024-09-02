@@ -1,4 +1,4 @@
-import { CardList } from "@/design-system/src/cards/CardList";
+import { CardList } from "@/design-system/src/cards/card-list";
 import { ExperienceCard, ExperienceCardProps } from "../ExperienceCard";
 
 export type ExperienceYearProps = {

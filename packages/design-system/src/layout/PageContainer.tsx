@@ -15,11 +15,11 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   currentPage,
 }) => {
   return (
-    <div>
+    <>
       <NightSkyBackground />
       {displayHeader && <Header currentPage={currentPage} />}
-      <div className="flex flex-col w-full px-20">{children}</div>
+      <div className="flex flex-col w-full my-10 px-20">{children}</div>
       {displayNavBar && <NavigationBarContainer />}
-    </div>
+    </>
   );
 };

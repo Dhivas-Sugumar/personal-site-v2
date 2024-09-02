@@ -217,7 +217,7 @@ const dataViz: ProjectCardProps = {
 };
 
 const picLink: ProjectCardProps = {
-  name: "PicLink",
+  name: "New Project",
   imageSrc: "test.svg",
   imageAlt: "Proxima Display Picture",
   startDate: "Jan 2023",

@@ -2,7 +2,7 @@
 import {
   PolaroidCard,
   PolaroidCardImage,
-} from "@/design-system/src/cards/PolaroidCard";
+} from "@/design-system/src/cards/polaroid-card";
 import { useState, useEffect } from "react";
 
 export type AboutMePolaroidProps = {
