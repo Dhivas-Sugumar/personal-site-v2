@@ -5,7 +5,7 @@ import { educationCards } from "./Constants";
 export const EducationCardList: React.FC = () => {
   return (
     <div>
-      <h2>Education</h2>
+      <h2 className="text-accent300">Education</h2>
       <CardList cards={educationCards} CardComponent={ExperienceCard} />
     </div>
   );

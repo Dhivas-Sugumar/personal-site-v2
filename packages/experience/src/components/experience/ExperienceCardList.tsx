@@ -5,7 +5,7 @@ import { ExperienceYear } from "./ExperienceYear";
 export const ExperienceCardList: React.FC = () => {
   return (
     <div>
-      <h2>Experience</h2>
+      <h2 className="text-accent300">Experience</h2>
       {experienceYears.years.map((experienceYear) => {
         return (
           <ExperienceYear
