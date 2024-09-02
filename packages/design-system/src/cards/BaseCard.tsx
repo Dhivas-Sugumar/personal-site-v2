@@ -20,7 +20,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
 }) => {
   const dateRange = `${startDate} - ${endDate}`;
   return (
-    <div className="bg-primary100/20 backdrop-blur-2xl border-[1px] rounded-lg border-accent300">
+    <div className="bg-primary100/20 backdrop-blur-2xl border-[1px] rounded-lg border-accent300 flex flex-row">
       {imageSrc && (
         <PolaroidCard
           imageSrc={imageSrc}
