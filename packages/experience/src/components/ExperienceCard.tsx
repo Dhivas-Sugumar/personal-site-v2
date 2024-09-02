@@ -1,7 +1,7 @@
 import {
   BaseCard,
   BaseCardProps,
-} from "../../../design-system/src/cards/BaseCard";
+} from "../../../design-system/src/cards/base-card";
 
 export type ExperienceCardProps = BaseCardProps & {
   jobTitle: string;

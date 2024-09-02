@@ -1,8 +1,8 @@
-import { TechnologyCardProps } from "../../../design-system/src/cards/TechnologyCard";
+import { TechnologyCardProps } from "../../../design-system/src/cards/technology-card";
 import {
   BaseCard,
   BaseCardProps,
-} from "../../../design-system/src/cards/BaseCard";
+} from "../../../design-system/src/cards/base-card";
 import { TechnologiesMarquee } from "@/design-system/src/marquee/TechnologiesMarquee";
 
 export type ProjectCardProps = BaseCardProps & {
@@ -22,6 +22,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex flex-col ">
         <h2>{name}</h2>
         <p className="text-accent300">{description}</p>
+      </div>
+      <div className="items-center">
         <TechnologiesMarquee technologies={technologies} />
       </div>
     </BaseCard>

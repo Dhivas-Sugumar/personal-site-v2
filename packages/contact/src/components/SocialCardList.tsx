@@ -1,4 +1,4 @@
-import { CardList } from "@/design-system/src/cards/CardList";
+import { CardList } from "@/design-system/src/cards/card-list";
 import { SocialCard } from "./SocialCard";
 import { socialCards } from "../Constants";
 

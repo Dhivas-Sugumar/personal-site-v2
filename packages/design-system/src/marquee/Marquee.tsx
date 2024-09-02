@@ -10,7 +10,7 @@ export function Marque<T>({
   MarqueeComponent,
 }: MarqueeProps<T>): JSX.Element {
   return (
-    <div className="bg-neutral0 w-fit ">
+    <div className="max-w-80">
       <RNFastMarquee
         pauseOnHover={true}
         className="justify-center items-center"

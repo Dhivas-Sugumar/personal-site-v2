@@ -23,3 +23,23 @@
     background-position: 0% 50%;
   }
 }
+
+@layer components {
+  .glassmorphism::before {
+    @apply content-[''] absolute inset-0 rounded-[30px] p-[1.5px] bg-gradient-to-r from-primary100 via-secondary100 to-tertiary100;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .glassmorphism::after {
+    @apply content-[''] absolute inset-0 rounded-[30px] pointer-events-none;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+  }
+}

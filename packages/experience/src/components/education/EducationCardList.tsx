@@ -1,4 +1,4 @@
-import { CardList } from "@/design-system/src/cards/CardList";
+import { CardList } from "@/design-system/src/cards/card-list";
 import { ExperienceCard } from "@/experience/src/components/ExperienceCard";
 import { educationCards } from "./Constants";
 

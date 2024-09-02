@@ -1,7 +1,7 @@
 "use client";
 import { ReactNode } from "react";
 import { InfiniteCarousel } from "./InfiniteCarousel";
-import { BaseCard } from "../cards/BaseCard";
+import { BaseCard } from "../cards/base-card";
 
 export type NumberSlideProps = {
   content: string;

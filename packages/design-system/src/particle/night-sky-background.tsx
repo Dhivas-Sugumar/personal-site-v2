@@ -6,7 +6,7 @@ import { Container, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 import { colorPalette } from "../theme/ColorPalette";
 
-const nightSkyOptions: Options = {
+const nightSkyOptions = {
   background: {
     color: colorPalette.neutral0,
   },
@@ -45,15 +45,11 @@ export const NightSkyBackground: React.FC = () => {
       await loadFull(engine);
     });
   }, []);
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
 
   return (
     <Particles
       id="tsParticles"
       options={nightSkyOptions}
-      particlesLoaded={particlesLoaded}
       className="absolute -z-10"
     />
   );
