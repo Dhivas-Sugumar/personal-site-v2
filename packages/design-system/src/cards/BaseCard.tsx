@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 import { PolaroidCard } from "./PolaroidCard";
 import { GradientShadow } from "../shadow/GradientShadow";
-import { FrostedGlassBackground } from "../glass-morphism/glass-morphism-container";
+import { GlassMorphismContainer } from "../glass-morphism/glass-morphism-container";
 
 export type BaseCardProps = PropsWithChildren & {
   imageSrc?: string;
@@ -20,12 +20,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
 }) => {
   const dateRange = `${startDate} - ${endDate}`;
   return (
-    <GradientShadow
-      gradientColor1={"primary100"}
-      gradientColor2={"tertiary100"}
-      gradientColor3={"secondary100"}
-      cardBackgroundColor="neutral0"
-    >
+    <div className="bg-primary100/20 backdrop-blur-2xl border-[1px] rounded-lg border-accent300">
       {imageSrc && (
         <PolaroidCard
           imageSrc={imageSrc}
@@ -35,6 +30,6 @@ export const BaseCard: React.FC<BaseCardProps> = ({
         />
       )}
       <div className="ml-6">{children}</div>
-    </GradientShadow>
+    </div>
   );
 };
