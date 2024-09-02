@@ -1,5 +1,5 @@
 import { AboutMeSection } from "@/about-me/src";
-import { Header, PageContainer } from "@/design-system";
+import { PageContainer } from "@/design-system";
 
 export default function Page() {
   return (
