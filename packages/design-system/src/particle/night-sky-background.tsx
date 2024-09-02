@@ -2,23 +2,18 @@
 
 import { useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import {
-  Container,
-  MoveDirection,
-  OutMode,
-} from "@tsparticles/engine";
+import { Container, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 import { colorPalette } from "../theme/ColorPalette";
 
-const nightSkyOptions = {
+const nightSkyOptions: Options = {
   background: {
     color: colorPalette.neutral0,
   },
   particles: {
     number: {
-      value: 100,
+      value: 200,
     },
-    fullScreen: { enable: true },
     move: {
       direction: MoveDirection.none,
       enable: true,
@@ -40,7 +35,7 @@ const nightSkyOptions = {
     size: {
       value: { min: 1, max: 3 },
     },
-    ZIndex: -1,
+    fullScreen: true,
   },
 };
 
@@ -59,6 +54,7 @@ export const NightSkyBackground: React.FC = () => {
       id="tsParticles"
       options={nightSkyOptions}
       particlesLoaded={particlesLoaded}
+      className="absolute -z-10"
     />
   );
 };
