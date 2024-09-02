@@ -1,7 +1,7 @@
 export const colorPalette = {
   // Neutrals
   neutral0: "#000000",
-  neutral100neutral10: "#22252A",
+  neutral10: "#22252A",
   neutral50: "#737982",
   neutral90: "#F4F5F6",
   neutral100: "#FFFFFF",

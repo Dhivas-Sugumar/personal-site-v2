@@ -39,6 +39,9 @@ import {
   SiExpo,
   IconType,
   SiMinutemailer,
+  SiPostgresql,
+  SiFramer,
+  SiGradle,
 } from "@icons-pack/react-simple-icons";
 
 export type IconVariant =
@@ -150,6 +153,10 @@ const icons: Record<IconVariant, IconType | null> = {
   expo: SiExpo,
   minitest: null,
   jetbrainsIDEsuite: null,
+  postgresql: SiPostgresql,
+  framerMotion: SiFramer,
+  gradle: SiGradle,
+  phaser: null,
 };
 
 export type IconProps = {
