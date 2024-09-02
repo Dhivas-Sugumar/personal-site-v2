@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import { PolaroidCard } from "./PolaroidCard";
 import { GradientShadow } from "../shadow/GradientShadow";
+import { FrostedGlassBackground } from "../glass-morphism/glass-morphism-container";
 
 export type BaseCardProps = PropsWithChildren & {
   imageSrc?: string;

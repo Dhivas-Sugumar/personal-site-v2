@@ -12,11 +12,11 @@ export const NavigationBarTab: React.FC<NavigationBarTabProps> = ({
   icon,
   link,
 }) => {
-  const { variant, size, iconAlt } = icon;
+  const { variant, size } = icon;
   return (
     <Link href={link}>
       <div className="flex flex-col items-center p-4">
-        <Icon variant={variant} size={size} iconAlt={iconAlt} />
+        <Icon variant={variant} size={size} />
         <h4 className="text-neutral0">{title}</h4>
       </div>
     </Link>

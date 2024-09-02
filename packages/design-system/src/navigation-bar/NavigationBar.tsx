@@ -1,3 +1,4 @@
+import { GlassMorphismContainer } from "../glass-morphism/glass-morphism-container";
 import { NavigationBarTab, NavigationBarTabProps } from "./NavigationBarTab";
 
 export type NavigationBarProps = {
