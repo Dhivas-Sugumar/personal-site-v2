@@ -13,7 +13,7 @@ export const ToastProvider: React.FC<PropsWithChildren> = ({ children }) => {
       pauseOnFocusLoss
       draggable
       pauseOnHover
-      theme="dark"
+      theme="light"
     />
   );
 };
