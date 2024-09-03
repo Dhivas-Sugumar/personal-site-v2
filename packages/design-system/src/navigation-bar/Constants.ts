@@ -1,63 +1,46 @@
 import { NavigationBarProps } from "./NavigationBar";
 import { NavigationBarTabProps } from "./NavigationBarTab";
 
-const dhivasTab : NavigationBarTabProps = {
-    title: "Dhivas",
-    icon: {
-        variant: "dhivasLogo",
-        size: "medium",
-        iconAlt: "dhivas",
-    },
-    link: "/about",
+const dhivasTab: NavigationBarTabProps = {
+  title: "Dhivas",
+  link: "/about",
+  //   iconVariant: "dhivasLogo",
 };
 
-const experienceTab : NavigationBarTabProps = {
-    title: "Experience",
-    icon: {
-        variant: "resume",
-        size: "medium",
-        iconAlt: "resume",
-    },
-    link: "/experience",
+const experienceTab: NavigationBarTabProps = {
+  title: "Experience",
+  link: "/experience",
+  //   iconVariant: "resume",
 };
 
-const projectsTab : NavigationBarTabProps = {
-    title: "Projects",
-    icon: {
-        variant: "project",
-        size: "medium",
-        iconAlt: "project icon",
-    },
-    link: "/project",
+const projectsTab: NavigationBarTabProps = {
+  title: "Projects",
+  link: "/project",
+  //   iconVariant: "project",
 };
 
-const contactTab : NavigationBarTabProps = {
-    title: "Contact",
-    icon: {
-        variant: "mail",
-        size: "medium",
-        iconAlt: "mail",
-    },
-    link: "/contact",
+const contactTab: NavigationBarTabProps = {
+  title: "Contact",
+  link: "/contact",
+  //   iconVariant: "email",
 };
 
-const miscTab : NavigationBarTabProps = {
-    title: "Misc",
-    icon: {
-        variant: "photo",
-        size: "medium",
-        iconAlt: "photo",
-    },
-    link: "/misc",
-};
+// const miscTab : NavigationBarTabProps = {
+//     title: "Misc",
+//     icon: {
+//         variant: "photo",
+//         size: "medium",
+//         iconAlt: "photo",
+//     },
+//     link: "/misc",
+// };
 
-
-export const navigationBarTabs : NavigationBarProps = {
-    tabs: [
-        dhivasTab,
-        experienceTab,
-        projectsTab,
-        contactTab,
-        // miscTab, // TODO: Release this tab with an update
-    ],
+export const navigationBarTabs: NavigationBarProps = {
+  tabs: [
+    dhivasTab,
+    experienceTab,
+    projectsTab,
+    contactTab,
+    // miscTab, // TODO: Release this tab with an update
+  ],
 };
