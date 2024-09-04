@@ -5,10 +5,10 @@ import { aboutMeImages } from "./Constants";
 export const AboutMeSection: React.FC = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center gap-8 overflow-auto">
-      <div className="w-full max-w-md">
+      <div>
         <AboutMePolaroid images={aboutMeImages} />
       </div>
-      <div className="w-full max-w-md">
+      <div>
         <AboutMeText />
       </div>
     </section>
