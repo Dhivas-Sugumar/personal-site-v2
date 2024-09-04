@@ -4,9 +4,13 @@ import { aboutMeImages } from "./Constants";
 
 export const AboutMeSection: React.FC = () => {
   return (
-    <div className="flex flex-row h-screen items-center justify-center gap-8">
-      <AboutMePolaroid images={aboutMeImages} />
-      <AboutMeText />
-    </div>
+    <section className="flex flex-col md:flex-row items-center justify-center gap-8 overflow-auto">
+      <div className="w-full max-w-md">
+        <AboutMePolaroid images={aboutMeImages} />
+      </div>
+      <div className="w-full max-w-md">
+        <AboutMeText />
+      </div>
+    </section>
   );
 };

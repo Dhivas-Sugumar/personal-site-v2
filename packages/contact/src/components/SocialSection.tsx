@@ -4,7 +4,7 @@ import { SocialCardList } from "./SocialCardList";
 export const SocialSection = () => {
   return (
     <>
-      <div className="grid grid-rows-1 grid-cols-2 gap-8">
+      <div className="flex flex-col gap-10 md:grid md:grid-rows-1 md:grid-cols-2 md:gap-8 ">
         <SocialCardList />
         <EmailForm />
       </div>

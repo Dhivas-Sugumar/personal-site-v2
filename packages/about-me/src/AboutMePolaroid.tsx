@@ -22,12 +22,10 @@ export const AboutMePolaroid: React.FC<AboutMePolaroidProps> = ({ images }) => {
   const currentImage = images[currentImageIndex];
 
   return (
-    <div>
-      <PolaroidCard
-        imageSrc={currentImage.imageSrc}
-        imageAlt={currentImage.imageAlt}
-        variant="default"
-      />
-    </div>
+    <PolaroidCard
+      imageSrc={currentImage.imageSrc}
+      imageAlt={currentImage.imageAlt}
+      variant="default"
+    />
   );
 };
