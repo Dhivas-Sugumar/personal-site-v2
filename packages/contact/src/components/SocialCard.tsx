@@ -20,7 +20,7 @@ export const SocialCard: React.FC<SocialCardProps> = ({
   return (
     <Link href={link}>
       <GradientShadow
-        gradientColor1={"primary100"}
+        gradientColor1={"primary200"}
         gradientColor2={"tertiary100"}
         gradientColor3={"secondary100"}
         cardBackgroundColor="neutral0"
