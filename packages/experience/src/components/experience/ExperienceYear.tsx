@@ -11,7 +11,7 @@ export const ExperienceYear: React.FC<ExperienceYearProps> = ({
   experiences,
 }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 justify-center items-center">
       <h2>{year}</h2>
       <CardList
         cards={experiences}

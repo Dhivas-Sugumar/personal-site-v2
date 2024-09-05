@@ -10,7 +10,7 @@ export const experienceYears: ExperienceYears = {
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Development Engineer 1",
-          startDate: "July 2024",
+          startDate: "Jan 2024",
           endDate: "Present",
           location: "Boston, MA",
           description:
@@ -34,17 +34,6 @@ export const experienceYears: ExperienceYears = {
           jobTitle: "Professional Development for Co-op Teaching Assistant",
           startDate: "Jan 2024",
           endDate: "May 2024",
-          location: "Boston, MA",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        },
-        {
-          imageSrc: "/assets/experience/flexcar.webp",
-          imageAlt: "Flexcar Logo",
-          companyName: "Flexcar",
-          jobTitle: "Software Development Engineer 1 - Part Time",
-          startDate: "Jan 2024",
-          endDate: "July 2024",
           location: "Boston, MA",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

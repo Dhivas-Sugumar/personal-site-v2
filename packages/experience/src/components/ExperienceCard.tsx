@@ -31,7 +31,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     //   </div>
     // </BaseCard>
     <GlassMorphismContainer isBorder={false}>
-      <div className="flex flex-col justify-center items-center rounded-full hover:border-2 hover:border-primary200">
+      <div className="flex flex-col justify-center items-center lg:w-80 lg:h-80 rounded-full hover:border-2 hover:border-primary200 drop-shadow-md shadow-primary200">
         <img
           src={props.imageSrc}
           alt={companyName}
