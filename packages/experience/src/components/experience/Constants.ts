@@ -6,6 +6,7 @@ export const experienceYears: ExperienceYears = {
       year: "2024",
       experiences: [
         {
+          imageSrc: "/assets/experience/flexcar.webp",
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Development Engineer 1",
@@ -16,6 +17,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/hackbeanpot.webp",
           imageAlt: "HackBeanpot Logo",
           companyName: "HackBeanpot",
           jobTitle: "Co-Executive Director",
@@ -26,6 +28,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/northeastern.webp",
           imageAlt: "Khoury College of Computer Science Logo",
           companyName: "Khoury College of Computer Sciences",
           jobTitle: "Professional Development for Co-op Teaching Assistant",
@@ -36,6 +39,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/flexcar.webp",
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Development Engineer 1 - Part Time",
@@ -51,6 +55,7 @@ export const experienceYears: ExperienceYears = {
       year: "2023",
       experiences: [
         {
+          imageSrc: "/assets/experience/flexcar.webp",
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Development Engineer Intern",
@@ -61,6 +66,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/clora.webp",
           imageAlt: "Clora Logo",
           companyName: "Clora",
           jobTitle: "Software Development Engineer Intern",
@@ -71,6 +77,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/hackbeanpot.webp",
           imageAlt: "HackBeanpot Logo",
           companyName: "HackBeanpot",
           jobTitle: "Software Engineer",
@@ -81,6 +88,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/northeastern.webp",
           imageAlt: "Khoury College of Computer Science Logo",
           companyName: "Khoury College of Computer Sciences",
           jobTitle: "Professional Development for Co-op Teaching Assistant",
@@ -96,6 +104,7 @@ export const experienceYears: ExperienceYears = {
       year: "2022",
       experiences: [
         {
+          imageSrc: "/assets/experience/clora.webp",
           imageAlt: "Clora Logo",
           companyName: "Clora",
           jobTitle: "Software Development Engineer Intern",
@@ -106,6 +115,7 @@ export const experienceYears: ExperienceYears = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         {
+          imageSrc: "/assets/experience/northeastern.webp",
           imageAlt: "Khoury College of Computer Science Logo",
           companyName: "Khoury College of Computer Sciences",
           jobTitle: "Teaching Assistant - Fundamentals of Computer Science 2",
@@ -121,6 +131,7 @@ export const experienceYears: ExperienceYears = {
       year: "2021",
       experiences: [
         {
+          imageSrc: "/assets/experience/northeastern.webp",
           imageAlt: "mHealth Lab Logo",
           companyName: "Northeastern University MHealth Research Lab",
           jobTitle: "Research Assistant",

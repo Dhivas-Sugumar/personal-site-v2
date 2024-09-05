@@ -13,7 +13,11 @@ export const ExperienceYear: React.FC<ExperienceYearProps> = ({
   return (
     <div className="flex flex-col gap-4">
       <h2>{year}</h2>
-      <CardList cards={experiences} CardComponent={ExperienceCard} />
+      <CardList
+        cards={experiences}
+        CardComponent={ExperienceCard}
+        orientation="row"
+      />
     </div>
   );
 };
