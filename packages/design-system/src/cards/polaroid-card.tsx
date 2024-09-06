@@ -25,6 +25,8 @@ export const PolaroidCard: React.FC<PolaroidCardProps> = ({
   const polaroidTextBottom = variant === "default" ? "border-8" : "border-2";
   const imageWidth = variant === "default" ? 450 : 100;
   const imageHeight = variant === "default" ? 400 : 100;
+  const polaroidWidth = variant === "default" ? 450 : 100;
+  const polaroidHeight = variant === "default" ? 500 : 150;
 
   return (
     <div className="border-8 border-neutral100 ">
