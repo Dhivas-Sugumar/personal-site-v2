@@ -8,7 +8,7 @@ export default function Page() {
       displayNavBar={true}
       currentPage={"Experience"}
     >
-      <h1 className="text-center">Resume</h1>
+      <h1 className="text-center mb-8">Resume</h1>
       <ExperienceSection />
     </PageContainer>
   );

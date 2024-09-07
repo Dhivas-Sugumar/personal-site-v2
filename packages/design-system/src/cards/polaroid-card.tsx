@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type PolaroidCardVariant = "default" | "small";
+type PolaroidCardVariant = "default" | "hero";
 export type PolaroidCardImage = {
   imageSrc: string;
   imageAlt: string;
@@ -23,13 +23,9 @@ export const PolaroidCard: React.FC<PolaroidCardProps> = ({
   variant = "default",
 }) => {
   const polaroidTextBottom = variant === "default" ? "border-8" : "border-2";
-  const imageWidth = variant === "default" ? 450 : 100;
-  const imageHeight = variant === "default" ? 400 : 100;
-  const polaroidWidth = variant === "default" ? 450 : 100;
-  const polaroidHeight = variant === "default" ? 500 : 150;
 
   return (
-    <div className={`border-8 border-neutral100`}>
+    <div className="border-8 border-neutral100">
       <div className="relative md:w-[200px] md:h-[250px] w-[100px] h-[150px]">
         <Image src={imageSrc} alt={imageAlt} fill />
       </div>

@@ -3,7 +3,6 @@ import {
   BaseCard,
   BaseCardProps,
 } from "../../../design-system/src/cards/base-card";
-import { TechnologiesMarquee } from "@/design-system/src/marquee/TechnologiesMarquee";
 import { Badge } from "@/design-system/src/badge/badge";
 
 export type ProjectCardProps = BaseCardProps & {
@@ -22,7 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <BaseCard polaroidVariant="default" {...props}>
       <div className="flex flex-col gap-3">
         <h2>{name}</h2>
-        <p className="text-accent300">{description}</p>
+        <p className="body">{description}</p>
         <div className="items-center flex flex-row gap-2 ">
           {/* <TechnologiesMarquee technologies={technologies} /> */}
           {technologies.map((technology) => {

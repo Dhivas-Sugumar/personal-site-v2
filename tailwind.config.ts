@@ -5,28 +5,28 @@ import { PluginCreator } from "tailwindcss/types/config";
 const paragraphPlugin: PluginCreator = ({ addComponents }) =>
   addComponents({
     ".body": {
+      fontSize: "24px",
+      fontWeight: "400",
+      lineHeight: "24px",
+      color: colorPalette.accent300,
+    },
+    ".body2": {
       fontSize: "16px",
       fontWeight: "400",
       lineHeight: "24px",
-      color: colorPalette.neutral100,
-    },
-    ".body2": {
-      fontSize: "14px",
-      fontWeight: "400",
-      lineHeight: "24px",
-      color: colorPalette.neutral100,
+      color: colorPalette.accent300,
     },
     ".body3": {
-      fontSize: "12px",
+      fontSize: "14px",
       fontWeight: "500",
       lineHeight: "24px",
-      color: colorPalette.neutral100,
+      color: colorPalette.accent300,
     },
     ".body4": {
-      fontSize: "10px",
+      fontSize: "12px",
       fontWeight: "400",
       lineHeight: "24px",
-      color: colorPalette.neutral100,
+      color: colorPalette.accent300,
     },
   });
 
@@ -41,14 +41,14 @@ const headerPlugin: PluginCreator = ({ addBase }) =>
     },
     h1: {
       fontFamily: "Eiko",
-      fontSize: "32px",
+      fontSize: "48px",
       fontWeight: "700",
       lineHeight: "40px",
       color: colorPalette.accent300,
     },
     h2: {
       fontFamily: "Eiko",
-      fontSize: "28px",
+      fontSize: "36px",
       fontWeight: "700",
       lineHeight: "36px",
       color: colorPalette.accent300,

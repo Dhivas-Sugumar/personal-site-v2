@@ -8,7 +8,7 @@ export default function Page() {
       displayNavBar={true}
       currentPage={"Contact"}
     >
-      <h1 className="text-accent300 header text-center mb-6">Contact Me</h1>
+      <h1 className="text-accent300 header text-center mb-8">Contact Me</h1>
       <SocialSection />
     </PageContainer>
   );
