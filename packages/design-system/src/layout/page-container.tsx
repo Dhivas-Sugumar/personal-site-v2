@@ -15,7 +15,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   currentPage,
 }) => {
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col min-h-screen">
       <NightSkyBackground />
       {displayHeader && <Header currentPage={currentPage} />}
       <div className="md:my-10 md:px-20 px-4 my-4">{children}</div>
