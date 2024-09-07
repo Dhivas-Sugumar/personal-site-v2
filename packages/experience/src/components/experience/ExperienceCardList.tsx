@@ -1,5 +1,5 @@
 import { experienceYears } from "./Constants";
-import { ExperienceYear } from "./ExperienceYear";
+import { ExperienceYear } from "./experience-year";
 export const ExperienceCardList: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-5">

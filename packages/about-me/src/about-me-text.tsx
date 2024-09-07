@@ -1,4 +1,4 @@
-import { aboutMeBody, aboutMeGreeting } from "./Constants";
+import { aboutMeBody, aboutMeGreeting } from "./constants";
 
 export const AboutMeText: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import { AboutMePolaroid } from "./about-me-polaroid";
 import { AboutMeText } from "./about-me-text";
-import { aboutMeImages } from "./Constants";
+import { aboutMeImages } from "./constants";
 
 export const AboutMeSection: React.FC = () => {
   return (
