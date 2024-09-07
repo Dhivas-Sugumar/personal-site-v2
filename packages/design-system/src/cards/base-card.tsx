@@ -17,7 +17,10 @@ export const BaseCard: React.FC<BaseCardProps> = ({
   endDate,
   children,
 }) => {
-  const dateRange = `${startDate} - ${endDate}`;
+  const isBothDatesPresent = startDate && endDate;
+  const dateRange = isBothDatesPresent
+    ? `${startDate} - ${endDate}`
+    : undefined;
   return (
     <GlassMorphismContainer>
       <div className="flex flex-row">

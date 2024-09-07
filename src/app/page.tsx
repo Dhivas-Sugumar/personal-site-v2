@@ -12,7 +12,7 @@ export default function Home() {
           <Hero />
         </div>
       </Link>
-      <NavigationBarContainer />
+      {/* <NavigationBarContainer /> */}
     </HeroAnimatedGradientBackground>
   );
 }
