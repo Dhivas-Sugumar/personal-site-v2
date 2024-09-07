@@ -25,7 +25,7 @@ export const AboutMePolaroid: React.FC<AboutMePolaroidProps> = ({ images }) => {
     <PolaroidCard
       imageSrc={currentImage.imageSrc}
       imageAlt={currentImage.imageAlt}
-      variant="default"
+      variant="hero"
     />
   );
 };

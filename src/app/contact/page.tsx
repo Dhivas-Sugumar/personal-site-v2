@@ -1,5 +1,5 @@
-import { SocialSection } from "@/contact/src/components/SocialSection";
-import { Header, PageContainer } from "@/design-system";
+import { SocialSection } from "@/contact/src/components/social-section";
+import { PageContainer } from "@/design-system";
 
 export default function Page() {
   return (

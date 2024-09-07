@@ -26,7 +26,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
             imageSrc={imageSrc}
             imageAlt={imageAlt}
             date={dateRange}
-            variant={children ? "small" : "default"}
+            variant={"default"}
           />
         )}
         <div className="ml-6">{children}</div>

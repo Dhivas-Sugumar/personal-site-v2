@@ -8,7 +8,7 @@ export default function Page() {
       displayNavBar={true}
       currentPage={"About"}
     >
-      <AboutMeSection />
+        <AboutMeSection />
     </PageContainer>
   );
 }
