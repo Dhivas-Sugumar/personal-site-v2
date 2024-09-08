@@ -13,6 +13,7 @@ export const NavigationBarTab: React.FC<NavigationBarTabProps> = ({
 }) => {
   return (
     <Link href={link}>
+
       <div className="flex flex-col items-center p-4 bg-gradient-to-r hover:animate-pulse hover:from-primary200 hover:to-tertiary100 ">
         {/* <Icon variant={iconVariant} size="medium" /> */}
         <h4 className="text-accent300">{title}</h4>
