@@ -23,10 +23,14 @@ export const PolaroidCard: React.FC<PolaroidCardProps> = ({
   variant = "default",
 }) => {
   const polaroidTextBottom = variant === "default" ? "border-8" : "border-2";
+  const polaroidSizeStyle =
+    variant === "default"
+      ? "md:w-[200px] md:h-[250px] w-[100px] h-[150px]"
+      : "md:w-[400px] md:h-[450px] w-[200px] h-[300px]";
 
   return (
     <div className="border-8 border-neutral100">
-      <div className="relative md:w-[200px] md:h-[250px] w-[100px] h-[150px]">
+      <div className={`relative ${polaroidSizeStyle}`}>
         <Image src={imageSrc} alt={imageAlt} fill />
       </div>
       <div className={`${polaroidTextBottom} border-neutral100 bg-neutral100 `}>

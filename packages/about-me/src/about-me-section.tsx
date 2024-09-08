@@ -6,7 +6,9 @@ export const AboutMeSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-8 overflow-auto">
       <AboutMePolaroid images={aboutMeImages} />
-      <AboutMeText />
+      <div className="w-full md:w-1/2">
+        <AboutMeText />
+      </div>
     </div>
   );
 };
