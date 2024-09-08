@@ -16,7 +16,7 @@ export const AboutMeText: React.FC = () => {
         Software Engineer at Flexcar, building across mobile, web, backend, and
         internal tools. I have a passion for taking an idea from concept to
         solution—bridging pain points with thoughtful design and clean code,
-        whether it's UI or architecture.
+        whether it's UI or code architecture.
         <br />
         <br />
         Outside of work, I love tinkering with personal projects, like the very
