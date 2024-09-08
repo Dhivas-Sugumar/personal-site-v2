@@ -41,7 +41,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         />
         <h2 className="text-center">{companyName}</h2>
         <h4 className="text-center">{jobTitle}</h4>
-        <p className="text-accent300 text-center">{startAndEnd}</p>
+        {props.startDate ? (
+          <p className="text-accent300 text-center">{startAndEnd}</p>
+        ) : null}
       </div>
     </GlassMorphismContainer>
   );
