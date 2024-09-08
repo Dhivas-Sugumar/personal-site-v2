@@ -4,8 +4,8 @@ import { educationCards } from "./Constants";
 
 export const EducationCardList: React.FC = () => {
   return (
-    <div>
-      <h2 className="text-accent300">Education</h2>
+    <div className="flex flex-col justify-center items-center">
+      <h2 className="text-accent300 text-center">Education</h2>
       <CardList cards={educationCards} CardComponent={ExperienceCard} />
     </div>
   );

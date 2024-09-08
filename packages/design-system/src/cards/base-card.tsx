@@ -17,7 +17,10 @@ export const BaseCard: React.FC<BaseCardProps> = ({
   endDate,
   children,
 }) => {
-  const dateRange = `${startDate} - ${endDate}`;
+  const isBothDatesPresent = startDate && endDate;
+  const dateRange = isBothDatesPresent
+    ? `${startDate} - ${endDate}`
+    : undefined;
   return (
     <GlassMorphismContainer>
       <div className="flex flex-row">
@@ -26,7 +29,7 @@ export const BaseCard: React.FC<BaseCardProps> = ({
             imageSrc={imageSrc}
             imageAlt={imageAlt}
             date={dateRange}
-            variant={children ? "small" : "default"}
+            variant={"default"}
           />
         )}
         <div className="ml-6">{children}</div>

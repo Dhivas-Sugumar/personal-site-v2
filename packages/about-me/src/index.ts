@@ -1,1 +1,1 @@
-export * from "./AboutMeSection";
+export * from "./about-me-section";

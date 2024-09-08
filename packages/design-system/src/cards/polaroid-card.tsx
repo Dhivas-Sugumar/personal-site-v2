@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type PolaroidCardVariant = "default" | "small";
+type PolaroidCardVariant = "default" | "hero";
 export type PolaroidCardImage = {
   imageSrc: string;
   imageAlt: string;
@@ -23,14 +23,16 @@ export const PolaroidCard: React.FC<PolaroidCardProps> = ({
   variant = "default",
 }) => {
   const polaroidTextBottom = variant === "default" ? "border-8" : "border-2";
+  const polaroidSizeStyle =
+    variant === "default"
+      ? "md:w-[200px] md:h-[250px] w-[100px] h-[150px]"
+      : "md:w-[400px] md:h-[450px] w-[200px] h-[300px]";
+
   return (
-    <div className="border-8 border-neutral100 w-fit h-fit">
-      {variant === "small" && (
-        <Image src={imageSrc} width={100} height={100} alt={imageAlt} />
-      )}
-      {variant === "default" && (
-        <Image src={imageSrc} width={450} height={400} alt={imageAlt} />
-      )}
+    <div className="border-8 border-neutral100">
+      <div className={`relative ${polaroidSizeStyle}`}>
+        <Image src={imageSrc} alt={imageAlt} fill />
+      </div>
       <div className={`${polaroidTextBottom} border-neutral100 bg-neutral100 `}>
         {date && <h3 className="header3 text-neutral0">{date}</h3>}
         <h3 className="header3 text-neutral0">{name}</h3>

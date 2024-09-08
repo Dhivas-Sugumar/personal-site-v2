@@ -1,8 +1,8 @@
-import { ProjectCardProps } from "./components/ProjectCard";
+import { ProjectCardProps } from "./components/project-card";
 
 const minerva: ProjectCardProps = {
   name: "Minerva",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/minerva.webp",
   imageAlt: "Minerva Display Picture",
   startDate: "Dec 2021",
   endDate: "Jan 2023",
@@ -50,7 +50,7 @@ const minerva: ProjectCardProps = {
 
 const personalSiteV1: ProjectCardProps = {
   name: "Personal Site V1",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/personal-site-v1.webp",
   imageAlt: "Personal Site V1 Display Picture",
   startDate: "Nov 2022",
   endDate: "Feb 2023",
@@ -90,7 +90,7 @@ const personalSiteV1: ProjectCardProps = {
 
 const personalSiteV2: ProjectCardProps = {
   name: "Personal Site V2",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/personal-site-v2.webp",
   imageAlt: "Personal Site V2 Display Picture",
   startDate: "August 2024",
   endDate: "August 2024",
@@ -130,7 +130,7 @@ const personalSiteV2: ProjectCardProps = {
 
 const mindMood: ProjectCardProps = {
   name: "Mind Mood",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/mind-mood.webp",
   imageAlt: "Mind Mood Display Picture",
   startDate: "July 2024",
   endDate: "July 2024",
@@ -154,7 +154,7 @@ const mindMood: ProjectCardProps = {
 
 const pizzaParty: ProjectCardProps = {
   name: "Pizza Party",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/pizza-party.webp",
   imageAlt: "Pizza Party Display Picture",
   startDate: "Apr 2024",
   endDate: "May 2024",
@@ -186,7 +186,7 @@ const pizzaParty: ProjectCardProps = {
 
 const dataViz: ProjectCardProps = {
   name: "Data Viz",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/dataviz.webp",
   imageAlt: "Data Viz Display Picture",
   startDate: "August 2021",
   endDate: "Present",
@@ -218,7 +218,7 @@ const dataViz: ProjectCardProps = {
 
 const picLink: ProjectCardProps = {
   name: "New Project",
-  imageSrc: "test.svg",
+  imageSrc: "/assets/project/piclink.webp",
   imageAlt: "Proxima Display Picture",
   startDate: "Jan 2023",
   endDate: "Present",
