@@ -25,7 +25,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="items-center flex flex-row gap-2 ">
           {/* <TechnologiesMarquee technologies={technologies} /> */}
           {technologies.map((technology) => {
-            return <Badge label={technology.name} />;
+            return (
+              <Badge
+                label={technology.name}
+                key={technology.name + Date.toString()}
+              />
+            );
           })}
         </div>
       </div>
