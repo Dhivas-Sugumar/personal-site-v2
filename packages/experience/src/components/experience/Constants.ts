@@ -9,7 +9,7 @@ export const experienceYears: ExperienceYears = {
           imageSrc: "/assets/experience/flexcar.webp",
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
-          jobTitle: "Software Engineer 1",
+          jobTitle: "Software Engineer",
           startDate: "Jan 2024",
           endDate: "Present",
           location: "Boston, MA",

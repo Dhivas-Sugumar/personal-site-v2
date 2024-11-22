@@ -1,6 +1,5 @@
 import React from "react";
 import { headerText } from "./Constants";
-import { Row } from "@/design-system";
 import { Icon } from "../Icon";
 import { GlassMorphismContainer } from "../glass-morphism/glass-morphism-container";
 

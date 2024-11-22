@@ -10,6 +10,7 @@ export const ExperienceCardList: React.FC = () => {
             <ExperienceYear
               year={experienceYear.year}
               experiences={experienceYear.experiences}
+              key={experienceYear.year}
             />
           );
         })}

@@ -1,4 +1,4 @@
-import { Header, PageContainer } from "@/design-system";
+import { PageContainer } from "@/design-system";
 import { ProjectSection } from "@/project/src/components/ProjectSection";
 
 export default function Page() {
