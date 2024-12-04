@@ -32,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 1. App
    These are the main pages that the app displays.
 2. Packages
-   Each one of these packages contains teh code and text for these features.
+   Each one of these packages contains the code and text for these features.
 
 ## Reuse
 
