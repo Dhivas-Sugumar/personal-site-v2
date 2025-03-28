@@ -3,18 +3,22 @@ import { ExperienceYears } from "../../types";
 export const experienceYears: ExperienceYears = {
   years: [
     {
-      year: "2024",
+      year: "2025",
       experiences: [
         {
           imageSrc: "/assets/experience/flexcar.webp",
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Engineer",
-          endDate: "Present",
           location: "Boston, MA",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
+      ],
+    },
+    {
+      year: "2024",
+      experiences: [
         {
           imageSrc: "/assets/experience/hackbeanpot.webp",
           imageAlt: "HackBeanpot Logo",
