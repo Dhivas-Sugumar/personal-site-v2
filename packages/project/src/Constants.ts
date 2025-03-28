@@ -220,8 +220,6 @@ const picLink: ProjectCardProps = {
   name: "New Project",
   imageSrc: "/assets/project/piclink.webp",
   imageAlt: "Proxima Display Picture",
-  startDate: "Jan 2023",
-  endDate: "Present",
   description: "Coming soon! Keep an eye out ...",
   technologies: [],
 };

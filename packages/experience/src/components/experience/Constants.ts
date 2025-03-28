@@ -10,7 +10,6 @@ export const experienceYears: ExperienceYears = {
           imageAlt: "Flexcar Logo",
           companyName: "Flexcar",
           jobTitle: "Software Engineer",
-          startDate: "Jan 2024",
           endDate: "Present",
           location: "Boston, MA",
           description:
